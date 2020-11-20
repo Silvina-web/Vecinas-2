@@ -1,9 +1,10 @@
-h1 {
-  font-family: 'Courier New', Courier, monospace;
-  color: pink;
+.conteiner {
+  position: relative;
 }
 
-p {
-  color: red;
+.conteiner h1 {
+  position: absolute;
+  top: 25rem;
+  left: 30rem;
 }
 /*# sourceMappingURL=estilos.css.map */
