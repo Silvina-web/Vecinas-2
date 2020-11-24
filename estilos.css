@@ -29,7 +29,6 @@
 }
 
 .enlaces {
-  border: 1px solid blue;
   /* display: flex;
 flex-direction: row;
 flex-wrap: wrap;
@@ -43,5 +42,11 @@ align-items: center; */
 
 .enlaces a {
   margin: 1rem;
+  font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #fdfdfd;
+  text-decoration: none;
+  background-color: rgba(26, 25, 25, 0.685);
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=estilos.css.map */
