@@ -1,4 +1,7 @@
+html{
+scroll-behavior: smooth;
 
+}
 *{
     margin:0;
     padding: 0%;
@@ -19,7 +22,7 @@
     font-family: montserrat subrayada;
     border: 1px solid red;
     position: absolute;
-    top: 20%;
+    top: 10%;
     width: 100%;
     text-align: center;
 
@@ -29,6 +32,12 @@
      h2{
          font-size: 2.5vw;
      }
+     h3{
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: inline-block;
+        margin: 1rem;
+     }
+     
 
 
 }
@@ -40,11 +49,11 @@ flex-wrap: wrap;
 justify-content: space-around;
 align-items: center; */
 position: absolute;
-top: 50rem;
+top: 40rem;
 width: 100%;
 text-align: center;
 a{
-    margin: 1rem;
+    margin: 0.5rem;
     font-family:  'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(253, 253, 253);
     text-decoration: none;
@@ -56,5 +65,10 @@ a{
     
 }
 
+
+}
+#quienessomos{
+    height: 100vh;
+    color:pink;
 
 }

@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0%;
@@ -15,7 +19,7 @@
   font-family: montserrat subrayada;
   border: 1px solid red;
   position: absolute;
-  top: 20%;
+  top: 10%;
   width: 100%;
   text-align: center;
 }
@@ -28,6 +32,12 @@
   font-size: 2.5vw;
 }
 
+.conteiner__texto h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-block;
+  margin: 1rem;
+}
+
 .enlaces {
   /* display: flex;
 flex-direction: row;
@@ -35,18 +45,23 @@ flex-wrap: wrap;
 justify-content: space-around;
 align-items: center; */
   position: absolute;
-  top: 50rem;
+  top: 40rem;
   width: 100%;
   text-align: center;
 }
 
 .enlaces a {
-  margin: 1rem;
+  margin: 0.5rem;
   font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #fdfdfd;
   text-decoration: none;
   background-color: rgba(26, 25, 25, 0.685);
   padding: 0.5rem;
   border-radius: 5px;
+}
+
+#quienessomos {
+  height: 100vh;
+  color: pink;
 }
 /*# sourceMappingURL=estilos.css.map */
