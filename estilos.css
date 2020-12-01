@@ -66,6 +66,30 @@ html {
   color: pink;
 }
 
+#quienessomos h1 {
+  text-align: center;
+  padding: 3rem;
+}
+
+#quienessomos h2 {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+
+#quienessomos .imagenes {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#quienessomos .imagenes img {
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #b3b3b3;
+}
+
 #nuestrosprofesionales {
   height: 100vh;
   color: gray;
