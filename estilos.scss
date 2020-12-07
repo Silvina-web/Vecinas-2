@@ -94,15 +94,25 @@ a{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-
+      
         img{
             border-radius: 5px;
             box-shadow: 5px 5px 5px  rgb(179, 179, 179);
-
+            transition: all 500ms ease ease-out;
+           
+            background-color: grey;
         }
+ 
+  &:hover > img{
+      background-color: grey;
+   
+    
+ 
+        
        
-    }
 }
+}
+
     
           
 
@@ -118,5 +128,14 @@ a{
 #nuestrosprofesionales{
     height: 100vh;
     color: gray;
+
+    .conteiner{
+        aside {
+            height: 50px;
+        width: 50px;
+        border: 3px solid red;
+
+    }
+}
     
 }
