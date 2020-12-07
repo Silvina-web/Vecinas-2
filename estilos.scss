@@ -80,38 +80,61 @@ a{
         padding: 3rem;
         
     }
-    h2{width: 50%;
+    h2{/* width: 50%;
      height: 50%;
-     margin: auto;
+     margin: auto; */
     
 
     }
+}
+
+.container__cards{
+    width: 100%;
+    max-width: 1200px;
+    height: 700px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
 
 
-    .imagenes{
- margin-top:3rem;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+.card{
+    width: 330px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+
+    &:hover{
+        transform: translatey(-15px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    img{
+        width: 330px;
+        height: 200px;
+    }
+    h2{border:1px solid red;
+     color: black;
+    }
+    p{
       
-        img{
-            border-radius: 5px;
-            box-shadow: 5px 5px 5px  rgb(179, 179, 179);
-            transition: all 500ms ease ease-out;
-           
-            background-color: grey;
-        }
- 
-  &:hover > img{
-      background-color: grey;
-   
+    }
+
+    }
+}
+
     
+
+
+  
  
         
        
-}
-}
 
     
           
