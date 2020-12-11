@@ -8,7 +8,7 @@ scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
-
+/* -------------SECCION1--------------------SECCION 1------------ */
 .conteiner__video{
     position: relative; 
     width: 100%;
@@ -38,18 +38,17 @@ scroll-behavior: smooth;
         margin: 1rem;
      }
 
-    /*  a{
-          padding: 2rem; 
-     } */
-     
-
-
+    
 }
+.flecha{
+    margin-top: 5rem;
+}
+
+
 .enlaces{
 
  display: flex;
 flex-direction: row;
-
 justify-content: space-around;
 align-items: center; 
 
@@ -71,29 +70,35 @@ a{
 }
 }
 
-
+/* ----------SECCION2-----------SECCION 2----- */
 
 #quienessomos{
+    
     height: 100vh;
-    color:pink;
-    h1{
+    width: 100vw;
+    
+    h1{ border: 1px solid red;
+       
         text-align: center;
         padding: 3rem;
         
     }
     .texto{ 
-        width: 70%;
-     height: 50%;
-     margin: auto; 
+        border:1px solid yellow;
+        padding: 1rem;
+       
+     
     
 
     }
 }
 
 .container__cards{
-    width: 100%;
-    max-width: 1200px;
-    height: 700px;
+    border:3px solid blue;
+    padding-bottom: 5rem;
+    width: 100wh;
+   /*  max-width: 1200px; */
+   /*  height: 100vh; */
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -155,10 +160,11 @@ a{
 
 
 
-
+/* -----------SECCION 3--------------SECCION 3--------- */
 
 #nuestrosprofesionales{
     height: 100vh;
+    width: 100wh;
     color: gray;
 
     .conteiner{
