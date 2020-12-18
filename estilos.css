@@ -40,7 +40,9 @@ html {
 }
 
 .flecha {
-  margin-top: 5rem;
+  /*   margin-top: 5rem; */
+  margin: auto;
+  text-align: center;
 }
 
 .enlaces {
@@ -72,7 +74,7 @@ html {
 #quienessomos h1 {
   border: 1px solid red;
   text-align: center;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 #quienessomos .texto {
@@ -82,7 +84,7 @@ html {
 
 .container__cards {
   border: 3px solid blue;
-  padding-bottom: 5rem;
+  padding: 2rem;
   width: 100wh;
   /*  max-width: 1200px; */
   /*  height: 100vh; */
