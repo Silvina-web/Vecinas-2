@@ -41,9 +41,10 @@ scroll-behavior: smooth;
     
 }
 .flecha{
-  /*   margin-top: 5rem; */
+ padding: 5rem;
   margin: auto;
   text-align: center;
+  
 }
 
 
@@ -98,6 +99,7 @@ a{
 .container__cards{
     border:3px solid blue;
     padding: 2rem;
+    padding-bottom: 7rem;
     width: 100wh;
    /*  max-width: 1200px; */
    /*  height: 100vh; */
@@ -146,25 +148,9 @@ a{
 
     
 
+/* -----------SECCION 3------Programacion--------SECCION 3--------- */
 
-  
- 
-        
-       
-
-    
-          
-
-
-
-
-
-
-
-
-/* -----------SECCION 3--------------SECCION 3--------- */
-
-#nuestrosprofesionales{
+#programacion{
     height: 100vh;
     width: 100wh;
     color: gray;
