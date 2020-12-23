@@ -115,27 +115,19 @@ html {
 }
 
 /* -----------SECCION 3------Programacion--------SECCION 3--------- */
-#programacion {
+#sitio__web {
   height: 100vh;
   width: 100wh;
 }
 
-#programacion .conteiner__sitioweb {
-  margin-top: 5rem;
+.conteiner__sitioweb {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
-#programacion .conteiner__sitioweb img {
-  width: 45%;
-  border-radius: 5px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-#programacion .conteiner__sitioweb p {
-  padding-top: 15rem;
-  width: 45%;
+.conteiner__sitioweb .textos__sitioweb {
+  width: 500px;
 }
 /*# sourceMappingURL=estilos.css.map */
