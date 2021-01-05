@@ -25,7 +25,7 @@ scroll-behavior: smooth;
 .conteiner__texto{
     
     font-family: montserrat subrayada;
-    border: 1px solid red; 
+    
     position: absolute;
     top: 10%;
     width: 100%;
@@ -69,7 +69,7 @@ scroll-behavior: smooth;
         
     }
     .texto{ 
-        border:1px solid yellow;
+       
         padding: 1rem;
        
      
@@ -79,7 +79,7 @@ scroll-behavior: smooth;
 }
 
 .container__cards{
-    border:3px solid blue;
+    
     padding: 2rem;
     padding-bottom: 7rem;
     width: 100wh;
@@ -140,16 +140,28 @@ scroll-behavior: smooth;
   
 
   .conteiner__sitioweb{
-
+  
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
 
+.imagen__sitioweb{
+    padding-top: 10rem;
+    /* border-radius: 20px;
+    box-shadow: 3px 3px 3px gray; */
 
+    img{
+        width: 700px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 3px rgba(155, 150, 150, 0.623);
+
+    }
+}
 
       .textos__sitioweb{
           width: 500px ;
+          padding-top: 16rem;
       }
 
 }
@@ -158,7 +170,7 @@ scroll-behavior: smooth;
     
      
 
-
+/* DISEñO---------------DISEñO------------- */
 
    
 
@@ -166,5 +178,5 @@ scroll-behavior: smooth;
 
 
 
-    
-    
+
+

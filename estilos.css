@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -23,7 +24,6 @@ html {
 
 .conteiner__texto {
   font-family: montserrat subrayada;
-  border: 1px solid red;
   position: absolute;
   top: 10%;
   width: 100%;
@@ -62,12 +62,10 @@ html {
 }
 
 #quienessomos .texto {
-  border: 1px solid yellow;
   padding: 1rem;
 }
 
 .container__cards {
-  border: 3px solid blue;
   padding: 2rem;
   padding-bottom: 7rem;
   width: 100wh;
@@ -127,7 +125,22 @@ html {
   justify-content: space-evenly;
 }
 
+.conteiner__sitioweb .imagen__sitioweb {
+  padding-top: 10rem;
+  /* border-radius: 20px;
+    box-shadow: 3px 3px 3px gray; */
+}
+
+.conteiner__sitioweb .imagen__sitioweb img {
+  width: 700px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgba(155, 150, 150, 0.623);
+}
+
 .conteiner__sitioweb .textos__sitioweb {
   width: 500px;
+  padding-top: 16rem;
 }
+
+/* DISEñO---------------DISEñO------------- */
 /*# sourceMappingURL=estilos.css.map */
