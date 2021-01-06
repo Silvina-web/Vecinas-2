@@ -127,20 +127,63 @@ html {
 
 .conteiner__sitioweb .imagen__sitioweb {
   padding-top: 10rem;
-  /* border-radius: 20px;
-    box-shadow: 3px 3px 3px gray; */
 }
 
 .conteiner__sitioweb .imagen__sitioweb img {
-  width: 700px;
+  width: 70vh;
   border-radius: 5px;
   box-shadow: 2px 2px 3px rgba(155, 150, 150, 0.623);
 }
 
 .conteiner__sitioweb .textos__sitioweb {
   width: 500px;
-  padding-top: 16rem;
+  padding-top: 15rem;
 }
 
 /* DISEñO---------------DISEñO------------- */
+#diseño {
+  height: 100vh;
+  width: 100wh;
+}
+
+#diseño img {
+  margin-bottom: 20rem;
+}
+
+#fotografia {
+  height: 100vh;
+  width: 100wh;
+}
+
+/* nuestros trabajos -------------------nuestro trabajos------------- */
+.trabajos {
+  width: 100wh;
+  height: 100vh;
+  margin-top: 15rem;
+}
+
+.trabajos h2 {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.trabajos .mockup {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.trabajos img {
+  padding: 1rem;
+  width: 30vh;
+  border-radius: 2px;
+  box-shadow: 2px 2px 2px gray;
+  transition: all 0.25s;
+}
+
+.trabajos img:hover {
+  transform: translatey(-5%);
+}
 /*# sourceMappingURL=estilos.css.map */
