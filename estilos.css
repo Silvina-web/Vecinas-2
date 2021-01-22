@@ -112,46 +112,48 @@ html {
 }
 
 /* -----------SECCION 3------Programacion--------SECCION 3--------- */
-#sitio__web {
+#sitio-web {
   outline: 3px solid #00a2ff;
   height: 100vh;
   width: 100vw;
-  position: relative;
 }
 
-#sitio__web .titulo-web {
-  position: absolute;
-  right: 30rem;
-  top: 4rem;
-}
+/*
+    .titulo-web{
+        position: absolute;
+        right: 30rem;
+        top: 4rem;
+        .fuente__titulo{
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-weight: 1;
+        }
+    }
 
-#sitio__web .titulo-web .fuente__titulo {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 1;
-}
+    .imagen-sitioweb{
+       img{
+           width: 32.5rem;
+           margin-left: 3rem;
+           margin-top: 3rem;
+           border-radius: 6px;
+           box-shadow: 2px 2px 3px rgba(201, 201, 201, 0.897);
+       }
+    }
+    .txt-sitioweb{
+      border-radius: 2px;
+      box-shadow: 2px 2px 2px grey;
+      background-color: rgba(255, 255, 255, 0.521);
+        width: 18rem;
+        position:absolute;
+        right: 650px;
+        top: 40px;
 
-#sitio__web .imagen-sitioweb img {
-  width: 32.5rem;
-  margin-left: 3rem;
-  margin-top: 3rem;
-  border-radius: 6px;
-  box-shadow: 2px 2px 3px rgba(201, 201, 201, 0.897);
-}
+        .txt__web{
+            padding: 2rem;
+        }
+    }
 
-#sitio__web .txt-sitioweb {
-  border-radius: 2px;
-  box-shadow: 2px 2px 2px grey;
-  background-color: rgba(255, 255, 255, 0.521);
-  width: 18rem;
-  position: absolute;
-  right: 650px;
-  top: 40px;
-}
 
-#sitio__web .txt-sitioweb .txt__web {
-  padding: 2rem;
-}
-
+} */
 /* DISEño----------------------DISEñO----------------- */
 .conteiner__diseño {
   width: 100wh;
