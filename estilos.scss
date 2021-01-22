@@ -134,50 +134,49 @@ scroll-behavior: smooth;
 /* -----------SECCION 3------Programacion--------SECCION 3--------- */
 
 #sitio__web{
-    height:80%;
-    width: 100wh; 
+    outline:3px solid rgb(0, 162, 255);
+    height:100vh;
+    width: 100vw; 
+    position: relative;
 
-.conteiner__sitioweb{
-        
-        position: relative;
-        .imagen__sitioweb{
-            img{
-                width: 50%;
-                padding-left: 1rem;
-                border-radius: 5px;
-                box-shadow: 3px 3px 5px gray;
-                 }
- }
- .conteiner__textositioweb{
-        background-color: rgba(255, 255, 255, 0.671);
-        border-radius: 15px;
-        box-shadow: 1px 1px 10px rgb(240, 240, 240);
-        width: 500px;
-        height: 300px;
+    .titulo-web{
         position: absolute;
-        top: 100px;
-        right: 600px;
-        p{
-            padding: 5rem;
+        right: 30rem;
+        top: 4rem;
+        .fuente__titulo{
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-weight: 1;
         }
     }
-}
-        
+
+    .imagen-sitioweb{
+       img{
+           width: 32.5rem;
+           margin-left: 3rem;
+           margin-top: 3rem;
+           border-radius: 6px;
+           box-shadow: 2px 2px 3px rgba(201, 201, 201, 0.897);
+       }
     }
-    .titulo__web{
-        width: 300px;
+    .txt-sitioweb{
+      border-radius: 2px;
+      box-shadow: 2px 2px 2px grey;
+      background-color: rgba(255, 255, 255, 0.521);
+        width: 18rem;
         position:absolute;
-        right: 350px;
-        top: 2100px;
-        border-right: 1px solid black;
-        border-radius: 1px;
-        
-    .fuente__titulo{
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 1;
-    
-     }
+        right: 650px;
+        top: 40px;
+
+        .txt__web{
+            padding: 2rem;
+        }
     }
+
+
+}
+
+
+    
 /* DISEño----------------------DISEñO----------------- */
     .conteiner__diseño{
         
