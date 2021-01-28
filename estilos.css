@@ -1,4 +1,39 @@
 @charset "UTF-8";
+#sitio-web {
+  width: 100vw;
+  height: 100vh;
+  outline: 3px solid red;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#sitio-web .titulo-web {
+  margin-top: 5rem;
+}
+
+#sitio-web .fuente__titulo {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 1;
+  border-right: 1px solid black;
+  padding-right: 2rem;
+}
+
+#sitio-web img {
+  width: 500px;
+  height: auto;
+  margin-top: 7rem;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.596);
+}
+
+#sitio-web .txt-sitioweb {
+  width: 300px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 26rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -112,13 +147,13 @@ html {
 }
 
 /* -----------SECCION 3------Programacion--------SECCION 3--------- */
-#sitio-web {
-  outline: 3px solid #00a2ff;
-  height: 100vh;
-  width: 100vw;
-}
+/*#sitio-web{
+    outline:3px solid rgb(0, 162, 255);
+    height:100vh;
+    width: 100vw; 
+ }
+    
 
-/*
     .titulo-web{
         position: absolute;
         right: 30rem;
