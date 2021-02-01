@@ -16,14 +16,11 @@
     .titulo-web{
 
         margin-top:5rem;
-        
-
-    }
-
-     .fuente__titulo{
-         @include titlestyle; 
+        }
+      .fuente__titulo{
+         @include titlestyle; /* variable declarada en seccion programacion */
          border-right: 1px solid black;
-         padding-right: 2rem;
+         padding-right: 1rem;
          
     }  
 

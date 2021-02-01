@@ -1,23 +1,18 @@
 
 @import "estilos/programacion";
 @import "estilos/diseño";
+@import "estilos/fotografia";
 
 html{
 scroll-behavior: smooth;
 
 }
 
-
-
 *{
     margin:0;
     padding: 0%;
     box-sizing: border-box;
 }
-
-
-
-
 
 /* -------------SECCION1--------------------SECCION 1------------ */
 .conteiner__video{
@@ -58,9 +53,6 @@ scroll-behavior: smooth;
   
 }
 
-
-
-
 /* ----------SECCION2-----------SECCION 2----- */
 
 #quienessomos{
@@ -79,10 +71,7 @@ scroll-behavior: smooth;
        
         padding: 1rem;
        
-     
-    
-
-    }
+     }
 }
 
 .container__cards{
@@ -136,120 +125,6 @@ scroll-behavior: smooth;
 }
 
     
-
-
-
-
-    
-/* DISEño----------------------DISEñO----------------- */
-    .conteiner__diseño{
-        
-        width: 100wh;
-        
-        position: relative;
-
-        #diseño{
-            
-            width: 200px;
-            height: 100px;
-            position: absolute;
-            bottom: 300px;
-            left:200px;
-            padding:2rem;
-            border-left:1px solid black;
-            
-            .titulo__diseño{
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-weight: 1;
-            }
-        }
-
-        .imagen__diseño{
-           
-            
-            
-        img{
-                width: 50%;
-                margin-left: 30rem;
-                border-radius: 5px;
-                box-shadow: 3px 3px 5px gray;
-                
-                
-                
-                 }
-        }
-
- .textos__diseño{
-     background-color: rgba(255, 255, 255, 0.651);
-     border-radius: 15px;
-     box-shadow: 1px 1px 3px rgb(175, 175, 175);
-     width: 400px;
-     height:200px ;
-     position: absolute;
-     left: 1300px;
-     top:250px;
-     padding: 1rem;
- }
-    }
-    
- 
-
-
-
-
-
- /*  .conteiner__sitioweb{
-       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-
-.imagen__sitioweb{
-    padding-top: 10rem;
-    img{
-        width: 80vh;
-        border-radius: 5px;
-        box-shadow: 2px 2px 3px rgba(155, 150, 150, 0.623);
-
-    }
-}
- .textos__sitioweb{
-          width: 500px ;
-          padding-top: 15rem;
-      }
-
-}
-
- */
-  
-    
-     
-
-/* DISEñO---------------DISEñO------------- */
-
-   
-/* #diseño{
-    
-    height: 100vh;
-    width: 100wh; 
-
-    img{
-        margin-bottom: 20rem;
-    }
-
-}
-
-
-
-
-#fotografia{
-   
-    height: 100vh;
-    width: 100wh; 
-}
- */
-
-
 /* nuestros trabajos -------------------nuestro trabajos------------- */
 
 
@@ -257,7 +132,7 @@ scroll-behavior: smooth;
     
     width:100wh;
     height: 100vh;
-    margin-top: 15rem;
+    margin-top: 3rem;
 
 h1{
     text-align: center;

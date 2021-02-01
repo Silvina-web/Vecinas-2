@@ -1,0 +1,36 @@
+#diseño{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+    .imagen-diseño{
+            img{
+        width:500px;
+        height: auto;
+        margin-top: 7rem;
+        border-radius: 3px;
+        box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.596);
+    }
+}
+    .txt-diseño{
+        width:300px;
+        font-family: $font-text; /* variable declarada en seccion programacion */
+        margin-top: 14rem;
+    }
+
+    .titulo-diseño{
+        margin-top: 17rem;
+
+        .fuente__titulo{
+        @include titlestyle;
+        border-right: 1px solid black;
+        padding-right: 1rem;
+        padding-right: 1rem;
+        }
+    }
+
+}
