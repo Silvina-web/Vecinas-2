@@ -144,18 +144,20 @@ h1{
 
 .mockup{
    
-    margin-top: 5rem;
-    display: flex;
+   margin-top: 5rem;
+   display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   justify-content: space-evenly;
+   justify-content: space-around;
   
 
   
 }
+
+}
 img{
     padding: 0.5rem;
-    width: 30vh;
+   width: 30vh; 
     border-radius: 2px;
     box-shadow: 2px 2px 2px gray;
     transition: all 0.25s;
@@ -166,7 +168,7 @@ img{
     
 }
 
-}
+
 
 /* FOOTER--------------------FOOTER----------------------- */
 .contacto{

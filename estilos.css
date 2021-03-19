@@ -231,10 +231,10 @@ html {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-.trabajos img {
+img {
   padding: 0.5rem;
   width: 30vh;
   border-radius: 2px;
@@ -242,7 +242,7 @@ html {
   transition: all 0.25s;
 }
 
-.trabajos img:hover {
+img:hover {
   transform: translatey(-5%);
 }
 
