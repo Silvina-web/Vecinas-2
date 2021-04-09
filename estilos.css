@@ -124,6 +124,7 @@ html {
 }
 
 .conteiner__texto {
+  outline: 3px solid red;
   font-family: montserrat subrayada;
   position: absolute;
   top: 10%;
@@ -149,6 +150,12 @@ html {
   padding: 5rem;
   margin: auto;
   text-align: center;
+}
+
+.flecha img {
+  width: 5rem;
+  height: 5rem;
+  box-shadow: none;
 }
 
 /* ----------SECCION2-----------SECCION 2----- */
