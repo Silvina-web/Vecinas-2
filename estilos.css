@@ -233,6 +233,22 @@ html {
   justify-content: space-around;
 }
 
+.trabajos .Naty-web {
+  outline: 2px solid red;
+}
+
+.trabajos .Naty-web h2 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 1;
+  text-align: center;
+}
+
+.trabajos .Naty-web h3 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 1;
+  text-align: center;
+}
+
 img {
   padding: 0.5rem;
   width: 30vh;
