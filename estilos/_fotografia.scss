@@ -1,31 +1,28 @@
 #fotografia{
-    outline: 3px solid yellowgreen;
+    
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
 
     img{
         width: 500px;
         height: auto;
         border-radius: 3px;
         box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.678);
-        margin: 25vh;
+         
     }
 
     .txt-foto{
         width: 300px;
         font-family: $font-text;
-        margin-top:33rem;
-        margin-left: 3rem;
+        
     }
     .fuente__titulo{
         @include titlestyle;
-        margin-top: 5rem;
-        margin-right: 8rem;
-        border-right: 1px solid black;
-        padding-right: 1rem;
+        
     }
 }
