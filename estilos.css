@@ -303,4 +303,12 @@ footer .img-redes {
   font-weight: 1;
   color: blanchedalmond;
 }
+
+/*-------------media ----------------------------media-----------------------media*/
+@media screen and (max-width: 750px) {
+  .mockup {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /*# sourceMappingURL=estilos.css.map */

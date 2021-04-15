@@ -238,3 +238,12 @@ font-size: 20px;
 
 
 
+/*-------------media ----------------------------media-----------------------media*/
+
+@media screen and (max-width:750px){
+
+    .mockup{
+        display: flex;
+        flex-direction: column;
+    }
+}
