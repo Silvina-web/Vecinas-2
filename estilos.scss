@@ -152,8 +152,8 @@ h1{
    justify-content: space-around;
 
    .img-mockup{
-    padding: 0.5rem;
-    width: 20vw; 
+    /* padding: 0.5rem; */
+    width: 250px; 
     border-radius: 2px;
     box-shadow: 2px 2px 2px gray;
     
@@ -240,10 +240,10 @@ font-size: 20px;
 
 /*-------------media ----------------------------media-----------------------media*/
 
-@media screen and (max-width:750px){
+/* @media screen and (max-width:750px){
 
     .mockup{
         display: flex;
         flex-direction: column;
     }
-}
+} */
