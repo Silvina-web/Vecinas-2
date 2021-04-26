@@ -116,7 +116,6 @@ html {
 }
 
 .conteiner__texto {
-  outline: 3px solid red;
   font-family: montserrat subrayada;
   position: absolute;
   top: 10%;
@@ -226,7 +225,6 @@ html {
 }
 
 .trabajos .mockup {
-  outline: 3px solid red;
   margin-top: 5rem;
   display: flex;
   flex-direction: row;
