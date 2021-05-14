@@ -1,5 +1,9 @@
 #fotografia{
-    
+    background-image:url(img/line.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed; 
     width: 100vw;
     height: 100vh;
     display: flex;
