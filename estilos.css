@@ -41,6 +41,9 @@
   #sitio-web img {
     width: 50vw;
   }
+  #sitio-web .txt-sitioweb {
+    width: 50vw;
+  }
 }
 
 #diseño {
@@ -123,6 +126,9 @@
     flex-direction: column;
   }
   #fotografia img {
+    width: 50vw;
+  }
+  #fotografia .txt-foto {
     width: 50vw;
   }
 }
