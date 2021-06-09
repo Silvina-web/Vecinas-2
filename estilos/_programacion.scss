@@ -7,11 +7,6 @@
 }  
 
 #sitio-web{
-    /* background-image:url(img/line.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center center;
-    background-attachment: fixed;  */
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -30,15 +25,22 @@
          }  
 
     img{
-        width: 500px;
+        width: 25vw;
         height: auto;
         /* margin-top: 15rem; */
         border-radius: 3px;
         box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.596);
     }
    .txt-sitioweb{
-        width: 300px;
+        width: 25vw;
         font-family: $font-text;
          
+    }
+    @media (max-width : 1200px){
+        flex-direction: column;
+            img{
+                width: 50vw;
+            }
+        
     }
 }

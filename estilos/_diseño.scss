@@ -1,9 +1,5 @@
 #diseño{
-    /* background-image:url(img/line.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center center;
-    background-attachment: fixed;  */
+    
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -15,7 +11,7 @@
 
     .imagen-diseño{
             img{
-        width:500px;
+        width:25vw;
         height: auto;
         
         border-radius: 3px;
@@ -23,7 +19,7 @@
     }
 }
     .txt-diseño{
-        width:300px;
+        width:25vw;
         font-family: $font-text; /* variable declarada en seccion programacion */
         
     }
@@ -36,5 +32,16 @@
         
         }
     }
-
+    @media (max-width : 1200px){
+        flex-direction: column;
+               .imagen-diseño{
+                   img{
+                       width: 50vw;
+                   }
+               }
+               .txt-diseño{
+                   width: 50vw;
+               }
+        
+    }
 }

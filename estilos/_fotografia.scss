@@ -1,9 +1,5 @@
 #fotografia{
-    /* background-image:url(img/line.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center center;
-    background-attachment: fixed;   */
+    
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -13,7 +9,7 @@
     align-items: center;
 
     img{
-        width: 500px;
+        width: 25vw;
         height: auto;
         border-radius: 3px;
         box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.678);
@@ -21,12 +17,19 @@
     }
 
     .txt-foto{
-        width: 300px;
+        width: 25vw;
         font-family: $font-text;
         
     }
     .fuente__titulo{
         @include titlestyle;
+        
+    }
+    @media (max-width : 1200px){
+        flex-direction: column;
+           img{
+               width: 50vw;
+           }
         
     }
 }
