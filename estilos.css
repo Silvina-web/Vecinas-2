@@ -145,7 +145,7 @@ html {
 
 /* -------------SECCION1--------------------SECCION 1------------ */
 .conteiner__video {
-  position: relative;
+  /*  position: relative;  */
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -272,6 +272,9 @@ html {
   .container__cards {
     flex-direction: column;
     align-items: center;
+  }
+  .container__cards .card {
+    width: 60vw;
   }
 }
 
