@@ -356,7 +356,7 @@ html {
 
 @media (max-width: 800px) {
   .contacto {
-    background-color: #8c8d89;
+    background-color: rgba(160, 156, 156, 0.952);
     height: 100vh;
   }
 }
@@ -371,7 +371,6 @@ html {
 }
 
 .contacto .main-conteiner-footer {
-  outline: 3px solid black;
   height: 30vh;
   display: flex;
   flex-direction: row;
