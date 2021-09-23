@@ -339,6 +339,8 @@ html {
 .simulador .card-conteiner .card-simulador button {
   padding: 0.5rem;
   border-radius: 5px;
+  margin-top: 5rem;
+  margin-left: 34%;
 }
 
 /* nuestros trabajos -------------------nuestro trabajos------------- */
