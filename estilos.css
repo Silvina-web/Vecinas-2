@@ -295,6 +295,45 @@ html {
   font-weight: 1;
 }
 
+.simulador .card-conteiner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.simulador .card-conteiner .card-simulador {
+  outline: 1px solid black;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  width: 12vw;
+  height: 30vh;
+  /* display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column; */
+}
+
+.simulador .card-conteiner .card-simulador ul li {
+  list-style: none;
+}
+
+.simulador .card-conteiner .card-simulador img {
+  outline: 3px solid red;
+  padding-top: 1rem;
+  margin-left: 32%;
+}
+
+.simulador .card-conteiner .card-simulador .precio {
+  margin-top: 4rem;
+}
+
+.simulador .card-conteiner .card-simulador button {
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
 /* nuestros trabajos -------------------nuestro trabajos------------- */
 .trabajos {
   width: 100vw;

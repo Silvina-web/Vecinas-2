@@ -169,8 +169,49 @@ scroll-behavior: smooth;
                 font-weight: 1;
             }
       }
- }
+ 
+.card-conteiner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1rem;
 
+.card-simulador{
+    outline: 1px solid black;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
+    width: 12vw;
+    height: 30vh;
+    /* display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column; */
+    
+      ul{
+        li{
+            list-style: none;
+        }   
+        } 
+         img{
+             outline: 3px solid red;
+            padding-top: 1rem;
+            margin-left: 32%;
+          
+           
+        }
+
+        .precio{
+            margin-top: 4rem;
+        } 
+        button{
+            display: inline-block;
+            padding: 0.5rem;
+            border-radius: 5px;
+            text-align: center;
+           
+        }
+} 
+}
+ }
     
 /* nuestros trabajos -------------------nuestro trabajos------------- */
 .trabajos{
