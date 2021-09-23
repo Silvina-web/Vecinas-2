@@ -181,32 +181,38 @@ scroll-behavior: smooth;
     outline: 1px solid black;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); 
     width: 12vw;
-    height: 30vh;
+    height: 42vh;
     /* display: flex;
     flex-wrap: nowrap;
     flex-direction: column; */
     
       ul{
+          text-align: center;
         li{
             list-style: none;
         }   
         } 
          img{
              outline: 3px solid red;
-            padding-top: 1rem;
-            margin-left: 32%;
+             padding-top: 1rem;
+             margin-left: 32%;
           
            
         }
+        h3{
+            text-align: center;
+           padding: 0.5rem;
+           
+        }
 
-        .precio{
+         .precio{
             margin-top: 4rem;
-        } 
+        }  
         button{
-            display: inline-block;
+            
             padding: 0.5rem;
             border-radius: 5px;
-            text-align: center;
+           
            
         }
 } 
