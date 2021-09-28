@@ -288,6 +288,7 @@ html {
 
 .simulador .simulador__titulo {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .simulador .simulador__titulo h1 {
@@ -304,13 +305,14 @@ html {
 }
 
 .simulador .card-conteiner .card-simulador {
-  outline: 1px solid black;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  /* outline: 1px solid black; */
+  box-shadow: 2px 2px 8px rgba(3, 3, 3, 0.979);
   width: 12vw;
   height: 42vh;
   /* display: flex;
     flex-wrap: nowrap;
     flex-direction: column; */
+  position: relative;
 }
 
 .simulador .card-conteiner .card-simulador ul {
@@ -322,25 +324,72 @@ html {
 }
 
 .simulador .card-conteiner .card-simulador img {
-  outline: 3px solid red;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 1rem;
-  margin-left: 32%;
 }
 
 .simulador .card-conteiner .card-simulador h3 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 1;
   text-align: center;
   padding: 0.5rem;
 }
 
+.simulador .card-conteiner .card-simulador p {
+  padding: 0.3rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .simulador .card-conteiner .card-simulador .precio {
-  margin-top: 4rem;
+  position: absolute;
+  width: 5rem;
+  bottom: 80px;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .simulador .card-conteiner .card-simulador button {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  position: absolute;
+  bottom: 15px;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  /*  padding: 0.5rem;
+            border-radius: 5px;
+            margin-top: 5rem;
+            margin-left: 34%; */
+}
+
+#template-carrito {
+  outline: 2px solid red;
+  width: 80vw;
+  text-align: center;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+#template-carrito .btn-positivo {
   padding: 0.5rem;
-  border-radius: 5px;
-  margin-top: 5rem;
-  margin-left: 34%;
+  background-color: yellowgreen;
+  border: none;
+}
+
+#template-carrito .btn-negativo {
+  padding: 0.5rem;
+  background-color: #e24848;
+  border: none;
+}
+
+#template-footer {
+  outline: 3px solid yellow;
+  padding-top: 3rem;
+  text-align: center;
+  width: 80vw;
+  margin: auto;
 }
 
 /* nuestros trabajos -------------------nuestro trabajos------------- */
