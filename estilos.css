@@ -269,16 +269,6 @@ html {
   /*  background-color: rgb(61, 61, 61); */
 }
 
-@media (max-width: 1200px) {
-  .container__cards {
-    flex-direction: column;
-    align-items: center;
-  }
-  .container__cards .card {
-    width: 60vw;
-  }
-}
-
 /* ---------Simulador--------------Simulador-----------------Simulador */
 .simulador {
   width: 100vw;
@@ -379,6 +369,12 @@ html {
             border-radius: 5px;
             margin-top: 5rem;
             margin-left: 34%; */
+}
+
+@media (max-width: 1200px) {
+  .simulador {
+    display: none;
+  }
 }
 
 #template-carrito {
@@ -608,7 +604,7 @@ html {
 
 @media (max-width: 800px) {
   .contacto .main-conteiner-footer .container-whapp img {
-    margin-bottom: -5rem;
+    margin-bottom: -3rem;
     margin-left: 6rem;
   }
 }

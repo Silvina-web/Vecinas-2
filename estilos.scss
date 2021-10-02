@@ -147,13 +147,7 @@ scroll-behavior: smooth;
     }
 
 
-    @media (max-width : 1200px){
-        flex-direction: column;
-        align-items: center;
-          .card{
-              width: 60vw;
-          }
-    }
+    
 }
 /* ---------Simulador--------------Simulador-----------------Simulador */
 
@@ -175,7 +169,7 @@ scroll-behavior: smooth;
                 margin-left: auto;
             }
         } */
-      
+        
         }
 
         .login{
@@ -198,6 +192,8 @@ scroll-behavior: smooth;
     flex-wrap: nowrap;
     justify-content: center;
     gap: 1rem;
+
+    
 
 .card-simulador{
     /* outline: 1px solid black; */
@@ -263,6 +259,9 @@ scroll-behavior: smooth;
            
         }
 } 
+}
+@media (max-width : 1200px){
+    display: none;
 }
  }
 
@@ -532,7 +531,7 @@ transform: translateX(-50%);
                       }
                          @media (max-width: 800px){
                                 img{ 
-                                    margin-bottom: -5rem;
+                                    margin-bottom: -3rem;
                                     margin-left: 6rem;
                                   
                                 }
