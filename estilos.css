@@ -428,9 +428,14 @@ html {
 
 .trabajos .mockup .img-mockup {
   width: 20vw;
-  padding: 0.1rem;
   border-radius: 2px;
   box-shadow: 1px 1px 2px gray;
+}
+
+.trabajos .mockup .img-mockup-padding {
+  width: 23vw;
+  padding: 0.5rem;
+  background-color: black;
 }
 
 .trabajos .Naty-web {
@@ -469,6 +474,10 @@ html {
     align-items: center;
   }
   .trabajos .mockup .img-mockup {
+    width: 40vw;
+    margin: 1rem;
+  }
+  .trabajos .mockup .img-mockup-padding {
     width: 40vw;
     margin: 1rem;
   }
