@@ -533,9 +533,15 @@ transform: translateX(-50%);
                         
 
                   .container-whapp{
+                     
                       
-                      img{
-                          margin-bottom: -19rem;
+                      img{position: fixed;
+                        bottom: 2%;
+                        right: 2%;
+                        box-shadow: 3px 3px 10px rgba(102, 100, 100, 0.568);
+                       border-radius: 2px;
+
+                         
                           
                       }
                          @media (max-width: 800px){
