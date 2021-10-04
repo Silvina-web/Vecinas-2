@@ -252,7 +252,7 @@ scroll-behavior: smooth;
             display: flex;
             flex-direction: row;
             width: 90vw;
-            height: 8vh;
+            height: 11vh;
             position: relative;
             
             img{
@@ -260,13 +260,14 @@ scroll-behavior: smooth;
             }
             h3{
             padding: 1.5rem;
+            font-size: 13px;
             }
             .precio{
                 
                 width: 70px;
                 height: 20px;
                 position: absolute;
-                bottom:55%; 
+                bottom:20%; 
                 left: 90%;
                 
                  }
@@ -274,8 +275,8 @@ scroll-behavior: smooth;
                      border: none;
                      padding: 0.5rem;
                      position: absolute;
-                     left: 92%;
-                     bottom: 5%;
+                     left: 76%;
+                     bottom: 20%;
                      background-color: rgb(55, 150, 11);
                  }
             p{
@@ -315,7 +316,9 @@ scroll-behavior: smooth;
            }
 
          
-     
+  @media (max-width : 1200px)  {
+      
+  } 
      
  }
  
@@ -325,6 +328,10 @@ scroll-behavior: smooth;
      text-align: center;
      width: 80vw;
     margin: auto; 
+
+    @media (max-width : 1200px) {
+        padding-top: 0.5rem;
+    }
      
  } 
 
@@ -397,6 +404,9 @@ transform: translateX(-50%);
 }
 
 @media screen and (max-width:820px) {
+    
+    
+    
        .mockup{
           display: flex;
           flex-direction: column;
@@ -416,6 +426,7 @@ transform: translateX(-50%);
 }
 
     }
+
 
 
 

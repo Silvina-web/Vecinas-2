@@ -375,7 +375,7 @@ html {
     display: flex;
     flex-direction: row;
     width: 90vw;
-    height: 8vh;
+    height: 11vh;
     position: relative;
   }
   .simulador .card-conteiner .card-simulador img {
@@ -383,20 +383,21 @@ html {
   }
   .simulador .card-conteiner .card-simulador h3 {
     padding: 1.5rem;
+    font-size: 13px;
   }
   .simulador .card-conteiner .card-simulador .precio {
     width: 70px;
     height: 20px;
     position: absolute;
-    bottom: 55%;
+    bottom: 20%;
     left: 90%;
   }
   .simulador .card-conteiner .card-simulador button {
     border: none;
     padding: 0.5rem;
     position: absolute;
-    left: 92%;
-    bottom: 5%;
+    left: 76%;
+    bottom: 20%;
     background-color: #37960b;
   }
   .simulador .card-conteiner .card-simulador p {
@@ -433,6 +434,12 @@ html {
   text-align: center;
   width: 80vw;
   margin: auto;
+}
+
+@media (max-width: 1200px) {
+  #template-footer {
+    padding-top: 0.5rem;
+  }
 }
 
 /* nuestros trabajos -------------------nuestro trabajos------------- */
