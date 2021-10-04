@@ -278,17 +278,16 @@ html {
 .simulador .simulador__titulo {
   text-align: center;
   margin-bottom: 2rem;
-  /*    .login{
-                a{
-                outline: 2px solid red;
-                margin-left: auto;
-            }
-        } */
 }
 
 .simulador .simulador__titulo h1 {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 1;
+}
+
+.simulador .simulador__titulo .login a {
+  outline: 2px solid red;
+  margin-left: auto;
 }
 
 .simulador .login {
@@ -312,13 +311,9 @@ html {
 }
 
 .simulador .card-conteiner .card-simulador {
-  /* outline: 1px solid black; */
-  box-shadow: 2px 2px 8px rgba(3, 3, 3, 0.979);
+  box-shadow: 2px 2px 2px rgba(102, 99, 99, 0.979);
   width: 12vw;
   height: 42vh;
-  /* display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column; */
   position: relative;
 }
 
@@ -365,14 +360,49 @@ html {
   right: 50%;
   left: 50%;
   transform: translate(-50%);
-  /*  padding: 0.5rem;
-            border-radius: 5px;
-            margin-top: 5rem;
-            margin-left: 34%; */
 }
 
 @media (max-width: 1200px) {
   .simulador {
+    /* display: none; */
+  }
+  .simulador .card-conteiner {
+    gap: 0.2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .simulador .card-conteiner .card-simulador {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 8vh;
+    position: relative;
+  }
+  .simulador .card-conteiner .card-simulador img {
+    margin: 0;
+  }
+  .simulador .card-conteiner .card-simulador h3 {
+    padding: 1.5rem;
+  }
+  .simulador .card-conteiner .card-simulador .precio {
+    width: 70px;
+    height: 20px;
+    position: absolute;
+    bottom: 55%;
+    left: 90%;
+  }
+  .simulador .card-conteiner .card-simulador button {
+    border: none;
+    padding: 0.5rem;
+    position: absolute;
+    left: 92%;
+    bottom: 5%;
+    background-color: #37960b;
+  }
+  .simulador .card-conteiner .card-simulador p {
+    display: none;
+  }
+  .simulador .card-conteiner .card-simulador ul li {
     display: none;
   }
 }
