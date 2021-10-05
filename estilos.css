@@ -375,7 +375,7 @@ html {
     display: flex;
     flex-direction: row;
     width: 90vw;
-    height: 11vh;
+    height: 10vh;
     position: relative;
   }
   .simulador .card-conteiner .card-simulador img {
