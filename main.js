@@ -1,4 +1,4 @@
-//Login
+//Login con jq
 
 $(document).ready(function(){
   $('#login').hide();
@@ -49,7 +49,7 @@ function validar(){
   }
   )
 
-
+//////////termino  login con jquery///////////
 
 //---CARD  CONTEINER ---id= "card-conteiner"---------------
 let serviciosJSON =[];
@@ -82,12 +82,20 @@ function pintarServicios(){
                                <button id= "${servicio.id}"> Adquirir</button> `;
 
 mainConteinerCards.appendChild(conteinerCards);
-//evento boton adquirir
+
+//evento boton adquirir con js
 document.getElementById(`${servicio.id}`).onclick =()=> agregarAlCarrito(`${servicio.id}`);
+
+
 
 }
 }
+
+
+
+//Tabla renderizada con JQuery
 function agregarAlCarrito(id){
+
   carro.push(serviciosJSON[id-1]);
   console.log(carro);
      $("#resumen").append(`
@@ -95,17 +103,32 @@ function agregarAlCarrito(id){
                       <td>${(serviciosJSON[id-1]).id}</td>
                       <td>${(serviciosJSON[id-1].nombre)}</td>
                       <td><input type ="number"  value= 1 id="multiplicador"></input></td>
+                     
                       <td>${(serviciosJSON[id-1].precio)}</td>
-                      <td><button  id="delete" class="btn btn-danger ">x</button></td>
+                      <td><button class="btn btn-danger delete">x</button></td>
                       </tr>`)
 
- document.getElementById("delete").addEventListener('click', (e)=> e.target.parentElement.parentElement.remove());
+
+  // Borrar item con Jquery
+     $(".delete").click(function (e){
+       e.target.parentElement.parentElement.remove()
+     })                 
+
+                              //Borrar item con JS Nativo   
+                              // let btnDelete= document.getElementsByClassName("delete");
+                              // for( const btn of btnDelete){
+                              //   btn.addEventListener('click',(e)=> e.target.parentElement.parentElement.remove())
+                              // }
+ 
  document.getElementById("multiplicador").addEventListener('change', cambiarCantidad);
  totalCarro();
+ 
 
 
 localStorage.setItem("Carro",JSON.stringify(carro));
 }
+
+//Sumar cantidad
 
 
 //Cantidad no menos a 1
@@ -115,6 +138,8 @@ function cambiarCantidad (event){
    input.value=1;
  }
 }
+
+
 
 function totalCarro(){
   let total = 0;
@@ -166,6 +191,24 @@ console.log(carro);
 
 
 
+//Formulario Footer
+
 
 //API DOLAR
 //URL: https://api-dolar-argentina.herokuapp.com/
+
+
+
+
+$("body").prepend(`<input type="text"  class="inputClass">
+                  <input type="number" class="inputClass">
+                  <select class="inputClass">
+                   <opcion value = "1" selected > ID 1 </opcion>
+                   <opcion value = "2" > ID2 </opcion>
+                   <opcion value = "3" > ID3 </opcion>
+                   </select>
+`);
+$(".inputClass").change(function(e){
+  console.log(e.target.value);
+  console.log(this.value);
+})
