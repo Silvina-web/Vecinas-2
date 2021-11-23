@@ -102,6 +102,11 @@ document.getElementById(`${servicio.id}`).onclick =()=> agregarAlCarrito(`${serv
 }
 }
 
+
+
+
+
+
 //Tabla renderizada con JQuery
 function agregarAlCarrito(id){
    carro.push(serviciosJSON[id-1]);
@@ -112,23 +117,23 @@ function agregarAlCarrito(id){
                       <td>${(serviciosJSON[id-1].nombre)}</td>
                       <td><input type ="number"  value= 1 id="multiplicador"></input></td>
                        <td  id="precio">${(serviciosJSON[id-1].precio)}</td>
+
                       <td><button class="btn btn-danger delete">x</button></td>
                       </tr>`)
 
- // Borrar item con Jquery
+ //Borrar item con Jquery
      $(".delete").click(function (e){
+
        e.target.parentElement.parentElement.remove();
        totalCarro();
        console.log(e);
-})                 
+})
 
- document.getElementById("multiplicador").addEventListener('change', cambiarCantidad);
+document.getElementById("multiplicador").addEventListener('change', cambiarCantidad);
  totalCarro();
  
 localStorage.setItem("Carro",JSON.stringify(carro));
 }
-
-
 
 
 //Cantidad no menos a 1
@@ -142,28 +147,14 @@ function cambiarCantidad (event){
 
 
 function totalCarro(){
-  //var filas= document.getElementById('resumen');
-  let total = 0;
-
-  // for( var i=0; i < filas.length; i++){
-  //   var filaTabla = filas[i]
-  //   var precioItem = filaTabla.getElementById('precio')[0]
-  //   var cantidadItems = filaTabla.getElementById('multiplicador')[0]
-  //   var quantity = cantidadItems.value
-  //   total = total + (precioItem * quantity);
-  //   console.log(totalCarro);
-
-  // }
-  
-  for( const serv of carro){
+ let total = 0;
+ for( const serv of carro){
     total += serv.precio;
     console.log(total);
   
 }
 precioUnitario.innerHTML= total;
 totalServicios.innerHTML= carro.length;
-// precioTotal.innerHTML=filaTabla.length;
-
 }
 
 const tableConteiner = document.getElementById("resumen-total");  
@@ -201,6 +192,7 @@ reiniciar.onclick =()=>{
   localStorage.removeItem("carro");
 
 }
+
 console.log(carro);
 
 
