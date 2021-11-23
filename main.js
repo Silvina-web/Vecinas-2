@@ -128,11 +128,11 @@ function agregarAlCarrito(id){
        totalCarro();
        console.log(e);
 })
-
 document.getElementById("multiplicador").addEventListener('change', cambiarCantidad);
  totalCarro();
- 
-localStorage.setItem("Carro",JSON.stringify(carro));
+
+//local storage.setItem("clave", "valor")
+ localStorage.setItem("Carro",JSON.stringify(carro));
 }
 
 
@@ -198,6 +198,10 @@ console.log(carro);
 
 
 
+
+
+
+
 //Formulario Footer validacion
 //Funcion llamada desde linea 210 HTML Form
 function validacion(){
@@ -229,6 +233,21 @@ function validacion(){
     return false;
   } else if (telefono.length > 20){
     alert("Telefono largo");
+  }
+  else{
+    //no se si esto hace algo 
+    const afirmativo=prompt("Genial!!Desea guardar los datos?");
+    var name=name;
+     if(afirmativo ==="si"){
+       localStorage.setItem("nombre",name)
+       localStorage.getItem(name)
+       alert("hola" + " "+ name)
+      
+     }else{
+       sessionStorage.removeItem(name)
+
+     }
+
   }
   
 
