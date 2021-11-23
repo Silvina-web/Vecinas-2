@@ -65,7 +65,12 @@ function validar(){
 //---CARD  CONTEINER ---id= "card-conteiner"---------------
 let serviciosJSON =[];
 let carro = [];
-
+// investigar-----------------
+const carroLocalS =JSON.parse(localStorage.getItem('carro'))
+if(carroLocalS !== null){
+  carro=carroLocalS
+}
+//----------------------------
 const mainConteinerCards = document.getElementById("card-conteiner");
 console.log(mainConteinerCards);
 
@@ -235,7 +240,7 @@ function validacion(){
     alert("Telefono largo");
   }
   else{
-    //no se si esto hace algo 
+    
     const afirmativo=prompt("Genial!!Desea guardar los datos?");
     var name=name;
      if(afirmativo ==="si"){
