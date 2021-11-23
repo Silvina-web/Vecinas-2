@@ -151,13 +151,17 @@
            </tr>
          </thead>
 
-        
-
-         <tbody id="resumen">
+        <tbody id="resumen">
 
         </tbody>
 
+        
        </table>
+
+       <div id="resumen-total" class="resumen-total">
+
+    </div>
+
 
     
 
@@ -207,26 +211,30 @@
                <div class="main-conteiner-footer">
                                    <div class="footer-form">
 
-                                       <form action="">
-                                              <p>
-                                               <label for="name">Name</label>
-                                               <input type="text" name="Nombre" id="name">
-                                             </p>
-                                             <p>
-                                              <label for="email">Email</label>
-                                             <input type="text" name="Email"id="email">
-                                             </p>
-                                              <p>
-                                             <label for="telefono">Telefono</label>
-                                              <input type="text"name="telefono" id="telefono">
-                                              </p>
-                                            <p class="block">
-                                             <label for="mensaje">Mensaje</label>
-                                             <textarea name="mensaje" id="mensaje" cols="" rows="2"></textarea>
-                                             </p>
-                                            <p class="block">
-                                           <button type="submit">ENVIAR</button>
-                                           </p>
+                <form action="Registro" class="registro" onsubmit="return validacion();">
+                    <p>
+                        <label for="name">Name</label>
+                        <input type="text"  name="Nombre" id="name">
+                     </p>
+
+                     <p>
+                        <label for="email">Email</label>
+                        <input type="text" name="Email" id="email">
+                      </p>
+
+                    <p>
+                     <label for="telefono">Telefono</label>
+                     <input type="text" name="telefono" id="telefono">
+                    </p>
+
+                     <p class="block">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" cols="" rows="2"></textarea>
+                    </p>
+
+                    <p class="block">
+                    <input type="submit" value="Enviar" class="btn-enviar">
+                    </p>
 
                                         </form>
                                   </div>

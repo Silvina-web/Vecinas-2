@@ -410,6 +410,11 @@ html {
   background-color: #ebe7e7;
 }
 
+.simulador .resumen-total {
+  outline: 5px solid brown;
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .simulador {
     /* display: none; */

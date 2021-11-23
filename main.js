@@ -8,6 +8,15 @@ $(document).ready(function(){
   })
 })
 
+ class registro{
+   constructor (usuario, contraseña, mail){
+     this.usuario= usuario;
+     this.contraseña=contraseña;
+     this.mail=mail;
+
+   }
+}
+const usuario1= new registro();
 
 let intentos = 1;
 function validar(){
@@ -15,6 +24,8 @@ function validar(){
   let usuario = $("#nombre").val();
   let contraseña = $("#pass").val();
   let mail =$("#mail").val();
+
+
 
 //intentos
   if(intentos <=3){
@@ -91,44 +102,33 @@ document.getElementById(`${servicio.id}`).onclick =()=> agregarAlCarrito(`${serv
 }
 }
 
-
-
 //Tabla renderizada con JQuery
 function agregarAlCarrito(id){
-
-  carro.push(serviciosJSON[id-1]);
-  console.log(carro);
+   carro.push(serviciosJSON[id-1]);
+   console.log(carro);
      $("#resumen").append(`
                      <tr>
                       <td>${(serviciosJSON[id-1]).id}</td>
                       <td>${(serviciosJSON[id-1].nombre)}</td>
                       <td><input type ="number"  value= 1 id="multiplicador"></input></td>
-                     
-                      <td>${(serviciosJSON[id-1].precio)}</td>
+                       <td  id="precio">${(serviciosJSON[id-1].precio)}</td>
                       <td><button class="btn btn-danger delete">x</button></td>
                       </tr>`)
 
-
-  // Borrar item con Jquery
+ // Borrar item con Jquery
      $(".delete").click(function (e){
-       e.target.parentElement.parentElement.remove()
-     })                 
+       e.target.parentElement.parentElement.remove();
+       totalCarro();
+       console.log(e);
+})                 
 
-                              //Borrar item con JS Nativo   
-                              // let btnDelete= document.getElementsByClassName("delete");
-                              // for( const btn of btnDelete){
-                              //   btn.addEventListener('click',(e)=> e.target.parentElement.parentElement.remove())
-                              // }
- 
  document.getElementById("multiplicador").addEventListener('change', cambiarCantidad);
  totalCarro();
  
-
-
 localStorage.setItem("Carro",JSON.stringify(carro));
 }
 
-//Sumar cantidad
+
 
 
 //Cantidad no menos a 1
@@ -137,24 +137,36 @@ function cambiarCantidad (event){
  if(input.value <=0){
    input.value=1;
  }
+ totalCarro();
 }
 
 
-
 function totalCarro(){
+  //var filas= document.getElementById('resumen');
   let total = 0;
+
+  // for( var i=0; i < filas.length; i++){
+  //   var filaTabla = filas[i]
+  //   var precioItem = filaTabla.getElementById('precio')[0]
+  //   var cantidadItems = filaTabla.getElementById('multiplicador')[0]
+  //   var quantity = cantidadItems.value
+  //   total = total + (precioItem * quantity);
+  //   console.log(totalCarro);
+
+  // }
+  
   for( const serv of carro){
     total += serv.precio;
     console.log(total);
   
-
-  }
+}
 precioUnitario.innerHTML= total;
 totalServicios.innerHTML= carro.length;
+// precioTotal.innerHTML=filaTabla.length;
 
 }
 
-const tableConteiner = document.getElementById("table");  
+const tableConteiner = document.getElementById("resumen-total");  
 
 let precioTotal = document.createElement("h2");
 precioTotal.innerHTML = "El total de su compra es $";
@@ -172,16 +184,19 @@ let totalServicios = document.createElement("h2");
 totalServicios.innerHTML = "0";
 tableConteiner.appendChild(totalServicios);
 
+
 let reiniciar = document.createElement("button");
 reiniciar.innerHTML = "Recalculando";
 reiniciar.setAttribute("id","reiniciar");
 tableConteiner.appendChild(reiniciar);
 
 reiniciar.onclick =()=>{
+
   carro = [];
   precioUnitario.innerHTML= "0";
   totalServicios.innerHTML= "No ha contratado nada";
   
+
   
   localStorage.removeItem("carro");
 
@@ -191,24 +206,56 @@ console.log(carro);
 
 
 
-//Formulario Footer
+//Formulario Footer validacion
+//Funcion llamada desde linea 210 HTML Form
+function validacion(){
+ var  name,email,telefono,expresion;
+  name = document.getElementById("name").value;
+  email=document.getElementById("email").value;
+  telefono=document.getElementById("telefono").value;
+  expresion= /\w+@\w+\.+[a-z]/;
+
+  if (name==="" || email ==="" || telefono===""){
+    alert("Todos los campos son obligatorios");
+    return false;
+
+  }
+  else if (name.length > 25){
+    alert("Nombre largo");
+    return false;
+  }
+  else if (email.length > 30){
+    alert("mail incorrecto");
+    return false;
+  } else if(!expresion.test(email)){
+    alert("Mail no cumple");
+    return false;
+
+  }
+  else if (isNaN(telefono)){
+    alert("telefono invalido");
+    return false;
+  } else if (telefono.length > 20){
+    alert("Telefono largo");
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //API DOLAR
 //URL: https://api-dolar-argentina.herokuapp.com/
-
-
-
-
-$("body").prepend(`<input type="text"  class="inputClass">
-                  <input type="number" class="inputClass">
-                  <select class="inputClass">
-                   <opcion value = "1" selected > ID 1 </opcion>
-                   <opcion value = "2" > ID2 </opcion>
-                   <opcion value = "3" > ID3 </opcion>
-                   </select>
-`);
-$(".inputClass").change(function(e){
-  console.log(e.target.value);
-  console.log(this.value);
-})
