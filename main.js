@@ -60,9 +60,10 @@ function validar(){
   }
   )
 
-//////////termino  login con jquery///////////
+//////////termino  login con jquery//////////////////////////////////////////////////////////////////////////////
 
-//---CARD  CONTEINER ---id= "card-conteiner"---------------
+///////CARD  CONTEINER ---id= "card-conteiner"///////////////////////////////////////
+
 let serviciosJSON =[];
 let carro = [];
 // investigar-----------------
@@ -92,53 +93,66 @@ obtenerJson();
 function pintarServicios(){
     for( const servicio of serviciosJSON){
   let conteinerCards = document.createElement ("div");
-  conteinerCards.innerHTML = `<h5> id: ${servicio.id}</h5>
+  conteinerCards.innerHTML = `<h5 style="display: none"> id: ${servicio.id}</h5>
                               <h5>  ${servicio.nombre}</h5>
                               <h2> $ ${servicio.precio}</h2>
-                               <button id= "${servicio.id}"> Adquirir</button> `;
+                              <button id="${servicio.id}"> Adquirir</button> `;
 
 mainConteinerCards.appendChild(conteinerCards);
 
 //evento boton adquirir con js
 document.getElementById(`${servicio.id}`).onclick =()=> agregarAlCarrito(`${servicio.id}`);
 
-
-
+    }
 }
-}
-
-
-
-
-
 
 //Tabla renderizada con JQuery
 function agregarAlCarrito(id){
    carro.push(serviciosJSON[id-1]);
    console.log(carro);
      $("#resumen").append(`
-                     <tr>
+                     <tr class="fila">
                       <td>${(serviciosJSON[id-1]).id}</td>
                       <td>${(serviciosJSON[id-1].nombre)}</td>
-                      <td><input type ="number"  value= 1 id="multiplicador"></input></td>
-                       <td  id="precio">${(serviciosJSON[id-1].precio)}</td>
-
+                      <td  id="precio">${(serviciosJSON[id-1].precio)}</td>
+                      <td><input type ="number"  value= 1 id="multiplicador"></input></td> 
                       <td><button class="btn btn-danger delete">x</button></td>
                       </tr>`)
 
- //Borrar item con Jquery
-     $(".delete").click(function (e){
+ //borrar 1 item tabla
+addEvent_borrar()
+  //Borrar item con Jquery
+//     $(".delete").click(function (e){
+//           e.target.parentElement.parentElement.remove();
+//           console.log(e);
+//     }
 
-       e.target.parentElement.parentElement.remove();
-       totalCarro();
-       console.log(e);
-})
+// )
 document.getElementById("multiplicador").addEventListener('change', cambiarCantidad);
+
  totalCarro();
 
 //local storage.setItem("clave", "valor")
  localStorage.setItem("Carro",JSON.stringify(carro));
 }
+
+  function addEvent_borrar(){
+    let btnDelete = document.querySelectorAll('.delete');
+    console.log(btnDelete);
+    btnDelete.forEach(element =>{
+      element.addEventListener('click', borraLinea);
+      
+        
+
+        function borraLinea(){
+          element.parentNode.parentNode.remove();
+          
+          
+        }
+      
+    })
+    
+  }
 
 
 //Cantidad no menos a 1
@@ -149,8 +163,6 @@ function cambiarCantidad (event){
  }
  totalCarro();
 }
-
-
 function totalCarro(){
  let total = 0;
  for( const serv of carro){
@@ -186,22 +198,18 @@ reiniciar.innerHTML = "Recalculando";
 reiniciar.setAttribute("id","reiniciar");
 tableConteiner.appendChild(reiniciar);
 
-reiniciar.onclick =()=>{
 
+
+reiniciar.onclick =()=>{
   carro = [];
   precioUnitario.innerHTML= "0";
   totalServicios.innerHTML= "No ha contratado nada";
-  
+  $('.fila').remove();
 
-  
+  console.log(carro);
   localStorage.removeItem("carro");
 
 }
-
-console.log(carro);
-
-
-
 
 
 
@@ -226,7 +234,7 @@ function validacion(){
     return false;
   }
   else if (email.length > 30){
-    alert("mail incorrecto");
+    alert("Mail incorrecto");
     return false;
   } else if(!expresion.test(email)){
     alert("Mail no cumple");
@@ -234,7 +242,7 @@ function validacion(){
 
   }
   else if (isNaN(telefono)){
-    alert("telefono invalido");
+    alert("Telefono invalido");
     return false;
   } else if (telefono.length > 20){
     alert("Telefono largo");
@@ -246,7 +254,7 @@ function validacion(){
      if(afirmativo ==="si"){
        localStorage.setItem("nombre",name)
        localStorage.getItem(name)
-       alert("hola" + " "+ name)
+       alert("Hola" + " "+ name+ " "+ "gracias por mirar nuestros servicios!")
       
      }else{
        sessionStorage.removeItem(name)

@@ -6,6 +6,7 @@
     },
     {
       "id": 2,
+    
       "nombre": "One Page",
       "precio": 500
     },
@@ -31,7 +32,7 @@
     },
     {
       "id": 7,
-      "nombre": "Agregado de sessiones",
+      "nombre": "URL/Sesiones",
       "precio": 180
     }
   ]
