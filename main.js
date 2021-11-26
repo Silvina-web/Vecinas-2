@@ -66,12 +66,7 @@ function validar(){
 
 let serviciosJSON =[];
 let carro = [];
-// investigar-----------------
-const carroLocalS =JSON.parse(localStorage.getItem('carro'))
-if(carroLocalS !== null){
-  carro=carroLocalS
-}
-//----------------------------
+
 const mainConteinerCards = document.getElementById("card-conteiner");
 console.log(mainConteinerCards);
 
@@ -89,7 +84,7 @@ const obtenerJson = () => {
 
 
 obtenerJson();
-
+// Renderizo cards 
 function pintarServicios(){
     for( const servicio of serviciosJSON){
   let conteinerCards = document.createElement ("div");
@@ -115,64 +110,49 @@ function agregarAlCarrito(id){
                       <td>${(serviciosJSON[id-1]).id}</td>
                       <td>${(serviciosJSON[id-1].nombre)}</td>
                       <td  id="precio">${(serviciosJSON[id-1].precio)}</td>
-                      <td><input type ="number"  value= 1 id="multiplicador"></input></td> 
+                      
                       <td><button class="btn btn-danger delete">x</button></td>
                       </tr>`)
 
- //borrar 1 item tabla
-addEvent_borrar()
-  //Borrar item con Jquery
-//     $(".delete").click(function (e){
-//           e.target.parentElement.parentElement.remove();
-//           console.log(e);
-//     }
+ 
+addEvent_borrar();
+totalCarro();
 
-// )
-document.getElementById("multiplicador").addEventListener('change', cambiarCantidad);
-
- totalCarro();
-
-//local storage.setItem("clave", "valor")
+//Lo agrego al Local Storage
  localStorage.setItem("Carro",JSON.stringify(carro));
 }
-
+//Borro cada item de la tabla
   function addEvent_borrar(){
     let btnDelete = document.querySelectorAll('.delete');
     console.log(btnDelete);
     btnDelete.forEach(element =>{
       element.addEventListener('click', borraLinea);
-      
         
-
-        function borraLinea(){
-          element.parentNode.parentNode.remove();
-          
-          
-        }
       
-    })
-    
-  }
-
-
-//Cantidad no menos a 1
-function cambiarCantidad (event){
- const input=  event.target;
- if(input.value <=0){
-   input.value=1;
- }
- totalCarro();
-}
+            function borraLinea(){
+              element.parentNode.parentNode.remove();
+          
+           totalCarro();
+            }
+            })
+          }
+          
+           
+// Cantidad de dinero y servicios contratados
 function totalCarro(){
  let total = 0;
- for( const serv of carro){
-    total += serv.precio;
-    console.log(total);
-  
-}
-precioUnitario.innerHTML= total;
-totalServicios.innerHTML= carro.length;
-}
+  for( const serv of carro){
+        total += serv.precio;
+        console.log(total);
+  }
+        precioUnitario.innerHTML = total;
+        totalServicios.innerHTML = carro.length;
+        
+  }
+
+    
+
+
 
 const tableConteiner = document.getElementById("resumen-total");  
 
@@ -199,14 +179,16 @@ reiniciar.setAttribute("id","reiniciar");
 tableConteiner.appendChild(reiniciar);
 
 
-
+//Boton recalculando
 reiniciar.onclick =()=>{
   carro = [];
   precioUnitario.innerHTML= "0";
   totalServicios.innerHTML= "No ha contratado nada";
   $('.fila').remove();
+  
 
   console.log(carro);
+
   localStorage.removeItem("carro");
 
 }
