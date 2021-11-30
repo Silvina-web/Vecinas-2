@@ -121,21 +121,60 @@ totalCarro();
 //Lo agrego al Local Storage
  localStorage.setItem("Carro",JSON.stringify(carro));
 }
-//Borro cada item de la tabla
-  function addEvent_borrar(){
-    let btnDelete = document.querySelectorAll('.delete');
-    console.log(btnDelete);
-    btnDelete.forEach(element =>{
+
+
+
+
+function addEvent_borrar() {
+
+  let btnDelete = document.querySelectorAll('.delete');
+
+  console.log(btnDelete);
+
+  btnDelete.forEach(element => {
+
       element.addEventListener('click', borraLinea);
+
+
+
+
+
+      function borraLinea() {
+
+          element.parentNode.parentNode.remove();
+          
+          
+          console.log(element.parentNode.parentNode);
+        
+          carro.splice(element.parentNode.parentNode, 1);
+        
+          totalCarro();
+          
+
+      }
+
+  })
+
+}
+
+
+
+
+//Borro cada item de la tabla
+  // function addEvent_borrar(){
+  //   let btnDelete = document.querySelectorAll('.delete');
+  //   console.log(btnDelete);
+  //   btnDelete.forEach(element =>{
+  //     element.addEventListener('click', borraLinea);
         
       
-            function borraLinea(){
-              element.parentNode.parentNode.remove();
+  //           function borraLinea(){
+  //             element.parentNode.parentNode.remove();
           
-           totalCarro();
-            }
-            })
-          }
+  //          totalCarro();
+  //           }
+  //           })
+  //         }
           
            
 // Cantidad de dinero y servicios contratados
