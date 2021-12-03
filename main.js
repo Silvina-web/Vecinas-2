@@ -106,7 +106,7 @@ function agregarAlCarrito(id){
    carro.push(serviciosJSON[id-1]);
    console.log(carro);
      $("#resumen").append(`
-                     <tr class="fila">
+                      <tr class="fila">
                       <td>${(serviciosJSON[id-1]).id}</td>
                       <td>${(serviciosJSON[id-1].nombre)}</td>
                       <td  id="precio">${(serviciosJSON[id-1].precio)}</td>
@@ -125,6 +125,8 @@ totalCarro();
 
 
 
+//Borro cada item de la tabla
+
 function addEvent_borrar() {
 
   let btnDelete = document.querySelectorAll('.delete');
@@ -142,42 +144,44 @@ function addEvent_borrar() {
       function borraLinea() {
 
           element.parentNode.parentNode.remove();
-          
-          
-          console.log(element.parentNode.parentNode);
-        
-          carro.splice(element.parentNode.parentNode, 1);
-        
-          totalCarro();
+          for(const item of carro){
+            if(
+              element.closest("td").previousElementSibling.previousElementSibling
+              .textContent==item.nombre
+            ){
+              let indice= carro.indexOf(item);
+              carro.splice(indice,1);
+              totalCarro();
+            }
+          }
+
+          //console.log(element.parentNode.parentNode);
+          //carro.splice(element.parentNode.parentNode, 1);
+
+
+
           
 
       }
 
-  })
+  });
 
 }
 
 
 
-
-//Borro cada item de la tabla
-  // function addEvent_borrar(){
-  //   let btnDelete = document.querySelectorAll('.delete');
-  //   console.log(btnDelete);
-  //   btnDelete.forEach(element =>{
-  //     element.addEventListener('click', borraLinea);
-        
+  
       
-  //           function borraLinea(){
-  //             element.parentNode.parentNode.remove();
+
+             
+
+             
           
-  //          totalCarro();
-  //           }
-  //           })
-  //         }
           
            
 // Cantidad de dinero y servicios contratados
+
+
 function totalCarro(){
  let total = 0;
   for( const serv of carro){
