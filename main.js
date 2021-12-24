@@ -122,9 +122,6 @@ totalCarro();
  localStorage.setItem("Carro",JSON.stringify(carro));
 }
 
-
-
-
 //Borro cada item de la tabla
 
 function addEvent_borrar() {
@@ -137,37 +134,33 @@ function addEvent_borrar() {
 
       element.addEventListener('click', borraLinea);
 
+             function borraLinea() {
 
-
-
-
-      function borraLinea() {
-
-          element.parentNode.parentNode.remove();
-          for(const item of carro){
+             element.parentNode.parentNode.remove();
+            
+           for(const item of carro){
             if(
-              element.closest("td").previousElementSibling.previousElementSibling
-              .textContent==item.nombre
-            ){
+              element.closest("td").previousElementSibling
+              .previousElementSibling.textContent == item.nombre)
+              {
               let indice= carro.indexOf(item);
-              carro.splice(indice,1);
+              carro.splice(indice, 1);
+              console.log(indice);
+
+              
+
               totalCarro();
+              
             }
-          }
-
-          //console.log(element.parentNode.parentNode);
-          //carro.splice(element.parentNode.parentNode, 1);
-
-
-
           
+          }
+          
+ }
 
-      }
-
-  });
+ });
 
 }
-
+  
 
 
   
@@ -232,7 +225,7 @@ reiniciar.onclick =()=>{
 
   console.log(carro);
 
-  localStorage.removeItem("carro");
+  //localStorage.removeItem("carro");
 
 }
 

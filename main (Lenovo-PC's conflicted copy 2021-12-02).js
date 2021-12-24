@@ -168,5 +168,3 @@ console.log(carro);
 
 
 
-//API DOLAR
-//URL: https://api-dolar-argentina.herokuapp.com/
