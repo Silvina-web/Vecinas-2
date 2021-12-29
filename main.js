@@ -1,67 +1,3 @@
-//Login con jq
-
-$(document).ready(function(){
-  $('#login').hide();
-
-  $("#desplegable").click(function(){
-      $("#login").slideToggle(1500);
-  })
-})
-
- class registro{
-   constructor (usuario, contraseña, mail){
-     this.usuario= usuario;
-     this.contraseña=contraseña;
-     this.mail=mail;
-
-   }
-}
-const usuario1= new registro();
-
-let intentos = 1;
-function validar(){
-//Variables
-  let usuario = $("#nombre").val();
-  let contraseña = $("#pass").val();
-  let mail =$("#mail").val();
-
-
-
-//intentos
-  if(intentos <=3){
-       if(usuario == "Silvina" && contraseña == "123" && mail == "silvina.marcantoni@gmail.com"){
-         swal ("Validacion",
-               "Bienvenida",
-                "success");
-                intentos=1;
-       }else{
-        swal ("Validacion",
-               "No no",
-              "error");
-                intentos ++; 
-
-       }
-
-       }else{
-         swal("validacion",
-               "Usuario bloquedo",
-               "error");
-       }
-  }
-
-
-
-//PREVENT DEFAULT
-  let submitBtn= document.getElementById("enviar");
-  submitBtn.addEventListener('click', (e)=>{
-     e.preventDefault();
-    console.log('Boton clickeado');
-    console.log (e.target);
-  }
-  )
-
-//////////termino  login con jquery//////////////////////////////////////////////////////////////////////////////
-
 ///////CARD  CONTEINER ---id= "card-conteiner"///////////////////////////////////////
 
 let serviciosJSON =[];
@@ -111,7 +47,7 @@ function agregarAlCarrito(id){
                       <td>${(serviciosJSON[id-1].nombre)}</td>
                       <td  id="precio">${(serviciosJSON[id-1].precio)}</td>
                       
-                      <td><button class="btn btn-danger delete">x</button></td>
+            
                       </tr>`)
 
  

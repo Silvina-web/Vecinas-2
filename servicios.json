@@ -2,37 +2,32 @@
     {
       "id": 1,
       "nombre": "Pagina Web",
-      "precio": 520
+      "precio": 100
     },
     {
       "id": 2,
-    
       "nombre": "One Page",
-      "precio": 500
+      "precio": 100
     },
     {
       "id": 3,
       "nombre": "Logo",
-      "precio": 250
+      "precio": 100
     },
     {
       "id": 4,
       "nombre": "Google analitics",
-      "precio": 350
+      "precio": 100
     },
+  
     {
       "id": 5,
-      "nombre": "Manejo de redes",
-      "precio": 850
+      "nombre": "Agregado de fotos",
+      "precio": 100
     },
     {
       "id": 6,
-      "nombre": "Agregado de fotos",
-      "precio": 150
-    },
-    {
-      "id": 7,
       "nombre": "URL/Sesiones",
-      "precio": 180
+      "precio": 100
     }
   ]
