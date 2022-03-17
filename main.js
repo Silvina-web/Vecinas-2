@@ -26,6 +26,7 @@ function pintarServicios(){
   let conteinerCards = document.createElement ("div");
   conteinerCards.innerHTML = `<h5 style="display: none"> id: ${servicio.id}</h5>
                               <h5>  ${servicio.nombre}</h5>
+                              <p> ${servicio.item}</p>
                               <h2> $ ${servicio.precio}</h2>
                               <button id="${servicio.id}"> Adquirir</button> `;
 

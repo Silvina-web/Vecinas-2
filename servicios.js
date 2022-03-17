@@ -1,5 +1,5 @@
 const servicios = [
-    { id: 1, nombre:"Pagina Web", precio: 520 },
+    { id: 1, nombre:"Pagina Web", item: "Hasta 5 secciones", precio: 520 },
     { id: 2, nombre: "One Page", precio: 500  },
     { id: 3, nombre:"Logo", precio: 250},
     { id: 4, nombre:"Google Analitics", precio: 350},
