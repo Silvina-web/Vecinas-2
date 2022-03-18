@@ -352,11 +352,9 @@ html {
     /* height: 80vh; */
   }
   .main-conteiner-flip .conteiner-flip .trasera ul {
-    outline: 2px solid red;
     padding: 0%;
   }
   .main-conteiner-flip .conteiner-flip .trasera ul li {
-    outline: 2px solid blue;
     font-size: 10px;
   }
 }
