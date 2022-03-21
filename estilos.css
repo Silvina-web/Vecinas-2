@@ -1,138 +1,7 @@
 @charset "UTF-8";
-#sitio-web {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-#sitio-web .titulo-web {
-  margin-top: 2rem;
-}
-
-#sitio-web .fuente__titulo {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 1;
-  border-right: 1px solid black;
-  padding-right: 1rem;
-  /* variable declarada en seccion programacion */
-}
-
-#sitio-web img {
-  width: 25vw;
-  height: auto;
-  /* margin-top: 15rem; */
-  border-radius: 3px;
-  box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.596);
-}
-
-#sitio-web .txt-sitioweb {
-  width: 25vw;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-@media (max-width: 1200px) {
-  #sitio-web {
-    flex-direction: column;
-  }
-  #sitio-web img {
-    width: 50vw;
-  }
-  #sitio-web .txt-sitioweb {
-    width: 50vw;
-  }
-}
-
-#diseño {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-#diseño .imagen-diseño img {
-  width: 25vw;
-  height: auto;
-  border-radius: 3px;
-  box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.596);
-}
-
-#diseño .txt-diseño {
-  width: 25vw;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  /* variable declarada en seccion programacion */
-}
-
-#diseño .titulo-diseño {
-  margin-top: 2rem;
-}
-
-#diseño .titulo-diseño .fuente__titulo {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 1;
-  border-right: 1px solid black;
-  padding-right: 1rem;
-}
-
-@media (max-width: 1200px) {
-  #diseño {
-    flex-direction: column;
-  }
-  #diseño .imagen-diseño img {
-    width: 50vw;
-  }
-  #diseño .txt-diseño {
-    width: 50vw;
-  }
-}
-
-#fotografia {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-#fotografia img {
-  width: 25vw;
-  height: auto;
-  border-radius: 3px;
-  box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.678);
-}
-
-#fotografia .txt-foto {
-  width: 25vw;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-#fotografia .fuente__titulo {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 1;
-  border-right: 1px solid black;
-  padding-right: 1rem;
-}
-
-@media (max-width: 1200px) {
-  #fotografia {
-    flex-direction: column;
-  }
-  #fotografia img {
-    width: 50vw;
-  }
-  #fotografia .txt-foto {
-    width: 50vw;
-  }
-}
-
+/* @import "estilos/programacion";
+@import "estilos/diseño";
+@import "estilos/fotografia"; */
 html {
   scroll-behavior: smooth;
 }
@@ -189,7 +58,8 @@ html {
 #quienessomos {
   height: 90vh;
   width: 100vw;
-  /*  background: linear-gradient(5deg,rgb(255, 255, 255) , rgb(170, 170, 170) , rgb(238, 238, 245) ); */
+  /*  background: linear-gradient(15deg,rgba(211, 211, 211, 0.966) ,
+                                    rgb(170, 170, 170) , rgb(255, 255, 255) );  */
 }
 
 #quienessomos .texto {
@@ -213,7 +83,7 @@ html {
 .container__cards {
   padding: 2rem;
   padding-bottom: 7rem;
-  /* width: 100vw; */
+  width: 100vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -257,17 +127,16 @@ html {
   padding: 2rem;
 }
 
-.container__cards .card a {
-  outline: 5px solid #771a1a;
-  text-decoration: none;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 100;
-  color: black;
-  border: 1px solid #666464;
-  padding: 7px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px rgba(182, 180, 180, 0.685);
-  /*  background-color: rgb(61, 61, 61); */
+@media (max-width: 400px) {
+  .container__cards .card {
+    height: 555px;
+  }
+  .container__cards .card h2 {
+    font-size: 18px;
+  }
+  .container__cards .card p {
+    font-size: 15px;
+  }
 }
 
 /* ----contenedor flip-------- */
@@ -308,10 +177,10 @@ html {
   box-shadow: 5px 2px 15px rgba(7, 3, 3, 0.274);
   transition: all ease .5s;
   display: block;
-  /*  &:hover{
-                                filter:blur(5px);
-                                
-                            }  */
+}
+
+.main-conteiner-flip .conteiner-flip .frontal:hover {
+  filter: blur(5px);
 }
 
 .main-conteiner-flip .conteiner-flip .trasera {
@@ -331,15 +200,16 @@ html {
 
 .main-conteiner-flip .conteiner-flip .trasera ul {
   list-style: none;
-  /* background-color: rgba(2, 2, 2, 0.52); */
-  padding: 4.7rem;
+  background-color: rgba(2, 2, 2, 0.52);
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 .main-conteiner-flip .conteiner-flip .trasera ul li {
   padding: 0.5rem;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(13, 14, 14, 0.438);
   border-radius: 5px;
 }
 
@@ -359,54 +229,10 @@ html {
   }
 }
 
-@media (max-width: 1200px) {
-  /* display: none; */
-  .card-conteiner {
-    gap: 0.2rem;
-    flex-direction: column;
-    align-items: center;
-  }
-  .card-conteiner .card-simulador {
-    display: flex;
-    flex-direction: row;
-    width: 90vw;
-    height: 10vh;
-    position: relative;
-  }
-  .card-conteiner .card-simulador img {
-    margin: 0;
-  }
-  .card-conteiner .card-simulador h3 {
-    padding: 1.5rem;
-    font-size: 13px;
-  }
-  .card-conteiner .card-simulador .precio {
-    width: 70px;
-    height: 20px;
-    position: absolute;
-    bottom: 20%;
-    left: 90%;
-  }
-  .card-conteiner .card-simulador button {
-    border: none;
-    padding: 0.5rem;
-    position: absolute;
-    left: 76%;
-    bottom: 20%;
-    background-color: #37960b;
-  }
-  .card-conteiner .card-simulador p {
-    display: none;
-  }
-  .card-conteiner .card-simulador ul li {
-    display: none;
-  }
-}
-
 /* nuestros trabajos -------------------nuestro trabajos------------- */
 .trabajos {
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   margin-top: 3rem;
 }
 
@@ -486,13 +312,14 @@ html {
 .contacto {
   width: 100vw;
   height: 70vh;
-  background-color: rgba(160, 156, 156, 0.952);
+  background-color: rgba(211, 210, 210, 0.678);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .contacto {
-    background-color: rgba(160, 156, 156, 0.952);
+    background-color: rgba(211, 210, 210, 0.678);
     height: 100vh;
+    margin-top: 10rem;
   }
 }
 
@@ -506,47 +333,43 @@ html {
 }
 
 .contacto .footer-info {
-  /* width: 30vw; */
-  border-left: 1px solid whitesmoke;
-  padding: 2rem;
-  margin-top: auto;
-  margin-bottom: auto;
-  color: blanchedalmond;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+  width: 90vw;
+  height: 40vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.contacto .footer-info ul li {
-  list-style: none;
-  padding: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 100;
+.contacto .footer-info .mapa iframe {
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px gray;
 }
 
-.contacto .footer-info ul li i {
-  font-size: 1.5rem;
+.contacto .footer-info .mail {
+  color: #f3f3f3;
+}
+
+.contacto .footer-info .mail a {
   padding: 5px;
+  text-decoration: none;
+  color: rgba(214, 210, 210, 0.979);
+  font-family: -apple-system, BlinkMacSystemFont,  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,  'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .contacto .footer-info {
-    padding-top: 7rem;
-    border-left: none;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 80vh;
   }
-}
-
-.contacto .container-whapp img {
-  position: fixed;
-  bottom: 2%;
-  right: 2%;
-  box-shadow: 3px 3px 10px rgba(102, 100, 100, 0.568);
-  border-radius: 50px;
-  /* outline: 2px solid black; */
-  padding: 0.5rem;
-}
-
-@media (max-width: 800px) {
-  .contacto .container-whapp img {
-    margin-bottom: -3rem;
-    margin-left: 6rem;
+  .contacto .footer-info iframe {
+    width: 240px;
+    height: 150px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
