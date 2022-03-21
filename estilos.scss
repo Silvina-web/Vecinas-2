@@ -263,6 +263,7 @@ scroll-behavior: smooth;
 
                  .conteiner-flip{
                      width: 95vw;
+                     margin-top: 1rem;
                      /* height: 80vh; */
 
 
@@ -291,8 +292,8 @@ scroll-behavior: smooth;
     height: 80vh;
     margin-top: 3rem;
     @media screen and (max-width:820px){
-        outline: 3px solid brown;
-        margin-top: -17rem;
+        
+        margin-top: -14rem;
     }
 h1{
     text-align: center;
@@ -362,10 +363,11 @@ transform: translateX(-50%);
     
     
        .mockup{
-         outline: 5px solid red;
+         
           display: flex;
           flex-direction: column;
           align-items: center;
+          margin-top: 1rem;
           
       
 
