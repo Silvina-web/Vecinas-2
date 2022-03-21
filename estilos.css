@@ -213,9 +213,10 @@ html {
   border-radius: 5px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .main-conteiner-flip {
     width: 100vw;
+    margin-top: -6rem;
   }
   .main-conteiner-flip .conteiner-flip {
     width: 95vw;
@@ -234,6 +235,13 @@ html {
   width: 100vw;
   height: 80vh;
   margin-top: 3rem;
+}
+
+@media screen and (max-width: 820px) {
+  .trabajos {
+    outline: 3px solid brown;
+    margin-top: -17rem;
+  }
 }
 
 .trabajos h1 {
@@ -294,6 +302,7 @@ html {
 
 @media screen and (max-width: 820px) {
   .trabajos .mockup {
+    outline: 5px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -315,11 +324,11 @@ html {
   background-color: rgba(211, 210, 210, 0.678);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 820px) {
   .contacto {
     background-color: rgba(211, 210, 210, 0.678);
     height: 100vh;
-    margin-top: 10rem;
+    margin-top: 25rem;
   }
 }
 
@@ -360,7 +369,7 @@ html {
   font-family: -apple-system, BlinkMacSystemFont,  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,  'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 820px) {
   .contacto .footer-info {
     display: flex;
     flex-direction: column;

@@ -257,8 +257,9 @@ scroll-behavior: smooth;
 
                               
           }
-          @media (max-width : 800px){
+          @media (max-width : 820px){
               width: 100vw;
+              margin-top: -6rem;
 
                  .conteiner-flip{
                      width: 95vw;
@@ -284,40 +285,15 @@ scroll-behavior: smooth;
 
 
 
-
-
-
-     
-
-                
-
-
-
-    
-  
-  
-
-
-
- 
- 
-
-
- 
-  
-   
-
-         
-
-  
- 
-
-    
 /* nuestros trabajos -------------------nuestro trabajos------------- */
 .trabajos{
     width:100vw;
     height: 80vh;
     margin-top: 3rem;
+    @media screen and (max-width:820px){
+        outline: 3px solid brown;
+        margin-top: -17rem;
+    }
 h1{
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -382,12 +358,15 @@ transform: translateX(-50%);
 
 @media screen and (max-width:820px) {
     
+   
     
     
        .mockup{
+         outline: 5px solid red;
           display: flex;
           flex-direction: column;
           align-items: center;
+          
       
 
         .img-mockup{
@@ -408,6 +387,7 @@ transform: translateX(-50%);
 
 
 
+
     
 
 
@@ -419,10 +399,10 @@ transform: translateX(-50%);
     height: 70vh;
     background-color: rgba(211, 210, 210, 0.678);   
 
-    @media (max-width: 700px){
+    @media (max-width: 820px){
         background-color: rgba(211, 210, 210, 0.678);;
         height: 100vh;
-        margin-top: 10rem;
+        margin-top: 25rem;
         
     }
                h2{
@@ -488,7 +468,7 @@ transform: translateX(-50%);
 
                         }
 
-                        @media(max-width: 700px){
+                        @media(max-width: 820px){
                             
                             display:flex;
                             flex-direction: column;
