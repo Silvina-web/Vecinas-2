@@ -494,7 +494,6 @@ transform: translateX(-50%);
                                                 gap: 1rem;
                                                 outline: 3px solid green;
                                                 padding: 2rem;
-                                                height: 60vh;
                                              }
                                                 
                                                
@@ -509,7 +508,15 @@ transform: translateX(-50%);
                                             }    
 
 
-                      
+                                            @media(max-width: 380px){
+                                                outline: 5px solid #ee82ee;
+                                                margin-top: 5rem;
+                                                height: 100vh;
+                                                .footer-info{
+                                                    height: 80vh;
+                                                }
+                                               
+                                            }
 
                         }
                         

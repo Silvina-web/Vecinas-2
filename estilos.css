@@ -402,11 +402,21 @@ html {
     gap: 1rem;
     outline: 3px solid green;
     padding: 2rem;
-    height: 60vh;
   }
   .contacto iframe {
     width: 240px;
     height: 150px;
+  }
+}
+
+@media (max-width: 380px) {
+  .contacto {
+    outline: 5px solid #ee82ee;
+    margin-top: 5rem;
+    height: 100vh;
+  }
+  .contacto .footer-info {
+    height: 80vh;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
