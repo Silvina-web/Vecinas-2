@@ -303,14 +303,11 @@ html {
   transform: translateX(-50%);
 }
 
-@media screen and (max-width: 960px) and (max-width: 960px) {
+@media screen and (max-width: 960px) {
   .trabajos {
     outline: 5px solid pink;
-    height: 70vh;
+    height: 100vh;
   }
-}
-
-@media screen and (max-width: 960px) {
   .trabajos .mockup {
     display: flex;
     flex-direction: column;
