@@ -246,6 +246,7 @@ border-top: 1px solid black;
                       }
           @media (max-width : 960px){
               width: 100vw;
+              height: 65vh;
             
 
                  .conteiner-flip{
@@ -265,6 +266,8 @@ border-top: 1px solid black;
                  }
           }
 
+
+        
 }
 
 
@@ -277,7 +280,7 @@ border-top: 1px solid black;
 
     @media screen and (max-width:960px){
         outline: 5px solid pink;
-        height: 100vh;
+        height: 70vh;
        /*  margin-top: -10rem; */
        
     }
