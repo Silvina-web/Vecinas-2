@@ -412,7 +412,6 @@ html {
 @media (max-width: 380px) {
   .contacto {
     outline: 5px solid #ee82ee;
-    margin-top: 5rem;
     height: 100vh;
   }
   .contacto .footer-info {
