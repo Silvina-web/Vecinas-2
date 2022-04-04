@@ -6,17 +6,17 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+} */
 /* -------------SECCION1--------------------SECCION 1------------ */
 .conteiner__video {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .conteiner__texto {
