@@ -19,18 +19,6 @@ html {
   object-fit: cover;
 }
 
-.conteiner__video video {
-  width: 100%;
-  height: 100%;
-}
-
-@media (max-width: 1200px) {
-  .conteiner__video video {
-    width: 100%;
-    height: 100%;
-  }
-}
-
 .conteiner__texto {
   font-family: montserrat subrayada;
   position: absolute;
