@@ -24,6 +24,13 @@ html {
   height: 100%;
 }
 
+@media (max-width: 1200px) {
+  .conteiner__video video {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
 .conteiner__texto {
   font-family: montserrat subrayada;
   position: absolute;
