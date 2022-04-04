@@ -22,6 +22,9 @@ scroll-behavior: smooth;
     width: 100vw;
     height: 100vh;
    overflow: hidden; 
+   video{
+       width:100vw ;
+   }
      
 }
 
@@ -40,9 +43,9 @@ scroll-behavior: smooth;
          font-size: 2.5vw;
      }
      h3{
-         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        display: inline-block;
-        margin: 1rem;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          display: inline-block;
+           margin: 1rem;
      }
 
     

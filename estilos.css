@@ -20,6 +20,10 @@ html {
   overflow: hidden;
 }
 
+.conteiner__video video {
+  width: 100vw;
+}
+
 .conteiner__texto {
   font-family: montserrat subrayada;
   position: absolute;
