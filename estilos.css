@@ -14,7 +14,6 @@ html {
 
 /* -------------SECCION1--------------------SECCION 1------------ */
 .conteiner__video {
-  /*  position: relative;  */
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -29,7 +28,7 @@ html {
 }
 
 .conteiner__texto h1 {
-  font-size: 20vw;
+  font-size: 12vw;
 }
 
 .conteiner__texto h2 {
@@ -160,14 +159,14 @@ html {
 }
 
 .main-conteiner-flip .conteiner-flip:hover figure {
-  transform: perspective(600px) rotateY(180deg);
+  transform: perspective(300px) rotateY(180deg);
 }
 
 .main-conteiner-flip .conteiner-flip figure {
   position: relative;
   transition: all ease 1s;
   transform-style: preserve-3d;
-  transform: perspective(600px) rotateY(0deg);
+  transform: perspective(300px) rotateY(0deg);
   text-align: center;
 }
 
@@ -194,7 +193,7 @@ html {
   top: 0;
   padding: 1rem;
   color: white;
-  transform: perspective(600px) rotateY(180deg);
+  transform: perspective(300px) rotateY(180deg);
   backface-visibility: hidden;
   overflow: auto;
   display: grid;
