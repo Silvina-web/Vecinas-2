@@ -13,8 +13,8 @@ html {
 } */
 /* -------------SECCION1--------------------SECCION 1------------ */
 .conteiner__video {
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   object-fit: cover;
 }
