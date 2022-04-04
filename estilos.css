@@ -47,7 +47,6 @@ html {
 }
 
 .flecha {
-  /*  padding: 4rem; */
   padding-top: 2rem;
   margin: auto;
   text-align: center;
@@ -68,7 +67,6 @@ html {
 }
 
 #quienessomos .texto {
-  outline: 3px solid red;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin-top: 2rem;
@@ -79,7 +77,6 @@ html {
 }
 
 #quienessomos .texto .fuente__texto {
-  outline: 3px solid red;
   margin-top: 2rem;
   font-weight: 200;
   width: 80vw;
@@ -129,7 +126,6 @@ html {
 
 .container__cards .card p {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  /* margin-top: 1rem; */
   color: black;
   padding: 2rem;
 }
@@ -154,7 +150,6 @@ html {
 }
 
 .main-conteiner-flip .texto-frontal {
-  outline: 5px solid blue;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 1;
@@ -162,7 +157,6 @@ html {
 }
 
 .main-conteiner-flip .conteiner-flip {
-  outline: 5px solid green;
   width: 50vw;
   margin-left: auto;
   margin-right: auto;
@@ -175,7 +169,7 @@ html {
 
 .main-conteiner-flip .conteiner-flip figure {
   position: relative;
-  transition: all ease .5s;
+  transition: all ease 1s;
   transform-style: preserve-3d;
   transform: perspective(600px) rotateY(0deg);
   text-align: center;
