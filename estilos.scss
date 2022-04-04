@@ -209,7 +209,7 @@ border-top: 1px solid black;
                             height: 100%;
                             border-radius: 5px;
                             box-shadow: 5px 2px 15px rgba(7, 3, 3, 0.274);
-                            transition: all ease .5s;
+                            transition: all ease 1s;
                             display: block;
                         
 
@@ -225,21 +225,25 @@ border-top: 1px solid black;
                            height: 100%;
                            border-radius: 5px;
                            box-shadow: 3px 3px 5px   rgba(170, 170, 170, 0.534);
-                           transition: all ease .5s;
+                           transition: all ease 1s;
                            position: absolute;
                            top: 0;
-                           padding: 1rem;
+                            padding: 1rem;
                            color:white;
                            transform: perspective(600px) rotateY(180deg);
                            backface-visibility: hidden;
                            overflow: auto;
+                           display: grid;
+                           place-items: center;
                             ul{
+                                
                            list-style:none;
                             background-color: rgba(2, 2, 2, 0.52); 
-                            margin-top: 3.5rem;
+                            
                             border-radius: 10px;
                             padding: 1rem;
                              li{
+                                
                                 padding: 0.5rem;
                                 margin-left: auto;
                                 margin-right: auto;
@@ -354,7 +358,7 @@ transform: translateX(-50%);
 @media screen and (max-width:960px) {
 
   
-        outline: 5px solid pink;
+        
         height: 100vh;
        
        
@@ -392,7 +396,7 @@ transform: translateX(-50%);
 /* FOOTER--------------------FOOTER----------------------- */
  .contacto{
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
     background-color: rgba(211, 210, 210, 0.678);   
 
    
@@ -465,23 +469,6 @@ transform: translateX(-50%);
 
 
 
-/* 
-                        @media(max-width: 800px){
-                            outline: 5px solid red;
-                            display:flex;
-                            flex-direction: column;
-                            width: 90vw;
-                            height: 60vh;
-                            margin-top: 2rem;
-
-
-                            iframe{
-                                width: 240px;
-                                height: 150px;
-                            }
-                            
-                           
-                        }     */
 
 
 
@@ -514,9 +501,8 @@ transform: translateX(-50%);
 
 
                                             @media(max-width: 380px){
-                                                outline: 5px solid #ee82ee;
-                                               
-                                                height: 100vh;
+                                        
+                                                  height: 100vh;
                                                 .footer-info{
                                                     height: 80vh;
                                                 }
