@@ -159,14 +159,14 @@ html {
 }
 
 .main-conteiner-flip .conteiner-flip:hover figure {
-  transform: perspective(300px) rotateY(180deg);
+  transform: perspective(900px) rotateY(180deg);
 }
 
 .main-conteiner-flip .conteiner-flip figure {
   position: relative;
   transition: all ease 1s;
   transform-style: preserve-3d;
-  transform: perspective(300px) rotateY(0deg);
+  transform: perspective(900px) rotateY(0deg);
   text-align: center;
 }
 
@@ -193,7 +193,7 @@ html {
   top: 0;
   padding: 1rem;
   color: white;
-  transform: perspective(300px) rotateY(180deg);
+  transform: perspective(900px) rotateY(180deg);
   backface-visibility: hidden;
   overflow: auto;
   display: grid;
@@ -363,7 +363,6 @@ html {
 
 @media (max-width: 800px) {
   .contacto {
-    outline: 5px solid red;
     margin-top: 2rem;
     width: 100vw;
     height: 70vh;
@@ -373,7 +372,6 @@ html {
     flex-direction: column;
     justify-content: space-around;
     gap: 1rem;
-    outline: 3px solid green;
     padding: 2rem;
   }
   .contacto iframe {
