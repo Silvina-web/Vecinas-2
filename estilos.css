@@ -287,7 +287,7 @@ html {
 }
 
 .trabajos .Naty-web h3 {
-  font-size: .9vw;
+  font-size: 1.1vw;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 1;
   text-align: center;
@@ -320,6 +320,10 @@ html {
   .trabajos .mockup .img-mockup-fede {
     width: 50vw;
     margin: 1rem;
+  }
+  .trabajos .mockup h3 {
+    font-size: 18px;
+    margin-top: 1rem;
   }
 }
 
