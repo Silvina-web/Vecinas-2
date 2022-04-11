@@ -1,7 +1,5 @@
 
-/* @import "estilos/programacion";
-@import "estilos/diseño";
-@import "estilos/fotografia"; */
+
 
 
 html{
@@ -17,12 +15,10 @@ scroll-behavior: smooth;
 
 /* -------------SECCION1--------------------SECCION 1------------ */
 .conteiner__video{
-    
-    
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    object-fit: cover;
+         width: 100vw;
+         height: 100vh;
+         overflow: hidden;
+        object-fit: cover;
 
    
 
@@ -71,25 +67,22 @@ scroll-behavior: smooth;
 #quienessomos{
      height: 100vh;
      width: 100vw;
-    /*  background: linear-gradient(15deg,rgba(211, 211, 211, 0.966) ,
-                                    rgb(170, 170, 170) , rgb(255, 255, 255) );  */
-   .texto{  
        
-       text-align: center; 
-       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-       margin-top: 2rem;
+   .texto{  
+        text-align: center; 
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+        margin-top: 2rem;
       
        .fuente__titulo{
            font-weight: 100;
         
        }
        .fuente__texto{
-        
             margin-top: 2rem; 
-           font-weight: 200;
-           width: 80vw;
-           margin-right: auto;
-           margin-left: auto;
+            font-weight: 200;
+            width: 80vw;
+            margin-right: auto;
+            margin-left: auto;
            
        }
       
@@ -97,8 +90,6 @@ scroll-behavior: smooth;
 }
 
 .container__cards{
-    
-    
     padding: 2rem;
     padding-bottom: 7rem;
     width: 100vw; 
@@ -147,10 +138,23 @@ scroll-behavior: smooth;
       }
     
 
-    }
+      /* @media (max-width : 1300px){
+          .container__cards{
+              outline: 5px solid red;
+              display: flex;
+              flex-direction: column;
+
+              .card{
+                  outline: 5px solid green;
+              }
+          }
+      }
+
+    
+
     @media (max-width : 400px){
         .card{
-          
+             outline: 5px solid blue;
              height: 555px;
            
 
@@ -162,9 +166,10 @@ scroll-behavior: smooth;
                  
              }
         }
-    }
+    } */
 
     
+}
 }
 
 
@@ -424,14 +429,7 @@ h1{
                     color: rgb(49, 49, 48);
                  }
                  
-
-                            
-                             
-               
-         
-       
-
-                   .footer-info{
+                 .footer-info{
                          
                          display: flex;
                          flex-direction: row;
@@ -454,10 +452,7 @@ h1{
                         
                             color: rgb(243, 243, 243);
                           
-                            
-                          
-                        
-                            a{
+                             a{
                                 
                                 padding: 5px;
                                 text-decoration: none;
@@ -491,7 +486,7 @@ h1{
 
                                              @media(max-width: 960px){
                                     
-                                                margin-top: 15rem;
+                                                margin-top: 26rem;
                                                 width: 100vw;
                                                 height: 70vh;
                                              .footer-info{
@@ -516,9 +511,9 @@ h1{
                                             }    
 
 
-                                            @media(max-width: 400px){
+                                            @media(max-width: 550px){
                                                 
-                                                  margin-top: -3rem;
+                                                  margin-top: -10rem;
                                                   height: 100vh;
                                                 .footer-info{
                                                     height: 80vh;
