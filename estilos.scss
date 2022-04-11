@@ -513,12 +513,16 @@ h1{
 
                                             @media(max-width: 550px){
                                                 
-                                                  margin-top: -10rem;
+                                                  margin-top: 7rem;
                                                   height: 100vh;
                                                 .footer-info{
                                                     height: 80vh;
                                                 }
                                                
+                                            }
+
+                                            @media(max-width: 400px)  {
+                                                margin-top: -5rem;
                                             }
 
                         }
