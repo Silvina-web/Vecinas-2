@@ -366,13 +366,9 @@ h1{
 
 @media screen and (max-width:960px) {
 
-  
-        
-        height: 100vh;
-       
-       
-    
-            .mockup{
+     height: 100vh;
+        .mockup{
+            
            display: flex;
            flex-direction: column;
            align-items: center;
@@ -393,7 +389,12 @@ h1{
     }
 
 }
+
+
 }
+
+
+
 
     
 
@@ -488,9 +489,9 @@ h1{
 
                                              }
 
-                                             @media(max-width: 800px){
-                                            
-                                                margin-top: 4rem;
+                                             @media(max-width: 960px){
+                                    
+                                                margin-top: 15rem;
                                                 width: 100vw;
                                                 height: 70vh;
                                              .footer-info{
@@ -515,8 +516,9 @@ h1{
                                             }    
 
 
-                                            @media(max-width: 380px){
-                                        
+                                            @media(max-width: 400px){
+                                                
+                                                  margin-top: -3rem;
                                                   height: 100vh;
                                                 .footer-info{
                                                     height: 80vh;
