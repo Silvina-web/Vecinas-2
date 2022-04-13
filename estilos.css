@@ -87,8 +87,8 @@ html {
 }
 
 #quienessomos .container__cards .card {
-  width: 330px;
-  height: 500px;
+  width: 18rem;
+  height: 53vh;
   border-radius: 5px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -103,7 +103,7 @@ html {
 }
 
 #quienessomos .container__cards .card img {
-  width: 330px;
+  width: 18rem;
   height: 200px;
 }
 
@@ -126,7 +126,7 @@ html {
   }
   #quienessomos .container__cards .card {
     outline: 5px solid blue;
-    height: 590px;
+    height: 96vh;
   }
   #quienessomos .container__cards .card h2 {
     font-size: 18px;
