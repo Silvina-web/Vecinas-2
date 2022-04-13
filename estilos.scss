@@ -137,7 +137,18 @@ scroll-behavior: smooth;
 
     
 }
-             @media (max-width:360px){
+
+@media (max-width:400px){
+    .container__cards{
+    .card{
+        outline: 5px solid rgb(213, 30, 60);
+        height: 60vh;
+    }
+}
+
+}
+
+             @media (max-width:300px){
 
                                    .container__cards{
                                           outline: 5px solid red;

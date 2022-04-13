@@ -120,7 +120,14 @@ html {
   padding: 2rem;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
+  #quienessomos .container__cards .card {
+    outline: 5px solid #d51e3c;
+    height: 60vh;
+  }
+}
+
+@media (max-width: 300px) {
   #quienessomos .container__cards {
     outline: 5px solid red;
   }
