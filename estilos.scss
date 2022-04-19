@@ -27,7 +27,7 @@ scroll-behavior: smooth;
      position: absolute;
      top: 10%;
      width: 100vw;
-    text-align: center;
+     text-align: center;
     
     h1{
         font-size: 20vw;
@@ -138,23 +138,23 @@ scroll-behavior: smooth;
     
 }
 
-@media (max-width:400px){
-    .container__cards{
-    .card{
-        outline: 5px solid rgb(213, 30, 60);
-        height: 60vh;
-    }
-}
+       @media (max-width:385px){
+              .container__cards{
+              .card{
+                    outline: 5px solid rgb(51, 30, 213);
+                    height: 75vh;
+                   }
+                               }
 
-}
+               }
 
-             @media (max-width:300px){
+       @media (max-width:300px){
 
                                    .container__cards{
                                           outline: 5px solid red;
                                    .card{
                                         outline: 5px solid blue;
-                                        height: 96vh;
+                                        height: 75vh;
            
 
                                     h2{
@@ -168,6 +168,17 @@ scroll-behavior: smooth;
                                                       }   
                                      }
 
+                                     @media only screen and(max-width:854px) and (orientation: landscape) {
+                                         .container__cards{
+                                             outline: 2px solid green;
+
+                                             .card{
+                                                 outline: 5px solid yellow;
+                                                 height: 120vh;
+                                             }
+                                         }
+                                     }
+
      }   
 
 
@@ -175,8 +186,9 @@ scroll-behavior: smooth;
 
 .main-conteiner-flip{
 border-top: 1px solid black;
- width: 100vw;
- height: 100vh;
+width: 100vw;
+height: 50rem;
+
 
         .texto-frontal{
                
@@ -191,7 +203,7 @@ border-top: 1px solid black;
                width:50vw;
                margin-left: auto;
                margin-right: auto;
-               margin-top: 6rem;
+               margin-top: 5rem;
                
                      &:hover figure{
                 -webkit-transform: perspective(900px) rotateY(180deg);
@@ -258,25 +270,22 @@ border-top: 1px solid black;
                       }
           @media (max-width : 960px){
               width: 100vw;
-              height: 65vh;
+              height: 100vh;
             
 
                  .conteiner-flip{
-                     width: 85vw;
-                     
-                     
-
-
-                   .trasera{
-                       ul{
-                            li{ 
-                            font-size: 13px;
+                     width: 80vw;
+                    
+                        .trasera{
+                                  ul{
+                                         li{ 
+                                            font-size: 13px;
                                
-                              }
-                         }
-                   }
-                 }
-          }
+                                             }
+                                    }
+                                 }
+                                  }
+                                        }
 
 
         
@@ -367,31 +376,36 @@ h1{
   
 }
 
-@media screen and (max-width:960px) {
+        @media screen and (max-width:960px) {
 
-     height: 100vh;
-        .mockup{
+                            height: 100vh;
+                                   .mockup{
             
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-            margin-top: 1rem;
-               .img-mockup{
-                    width: 50vw;
-                    margin: 1rem;
-                     }
-                .img-mockup-fede{
-                     width: 50vw;
-                      margin: 1rem;
-                }
+                                          display: flex;
+                                          flex-direction: column;
+                                          align-items: center;
+                                          margin-top: 1rem;
+                                  .img-mockup{
+                                          width: 50vw;
+                                          margin: 1rem;
+                                            }
+                                  .img-mockup-fede{
+                                          width: 50vw;
+                                          margin: 1rem;
+                                                  }
 
-                h3{
-                    font-size: 2.5vw;
+                                   h3{
+                                      font-size: 2.5vw;
                    
-                }
-    }
+                                      }
+                                          }
 
-}
+                                             }
+
+           @media (min-width:319px)and(max-width:390px) {
+               height: 125vh;
+               
+           }                                  
 
 
 }
