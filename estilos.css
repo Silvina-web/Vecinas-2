@@ -50,6 +50,16 @@ html {
   box-shadow: none;
 }
 
+@media only screen and (max-width: 854px) and (orientation: landscape) {
+  .flecha {
+    padding-top: 0.5rem;
+  }
+  .flecha img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
 /* ----------SECCION2-----------SECCION 2----- */
 #quienessomos {
   height: 100vh;
@@ -122,17 +132,12 @@ html {
 
 @media (max-width: 385px) {
   #quienessomos .container__cards .card {
-    outline: 5px solid #331ed5;
     height: 75vh;
   }
 }
 
 @media (max-width: 300px) {
-  #quienessomos .container__cards {
-    outline: 5px solid red;
-  }
   #quienessomos .container__cards .card {
-    outline: 5px solid blue;
     height: 75vh;
   }
   #quienessomos .container__cards .card h2 {
@@ -144,11 +149,7 @@ html {
 }
 
 @media only screen and (max-width: 854px) and (orientation: landscape) {
-  #quienessomos .container__cards {
-    outline: 2px solid green;
-  }
   #quienessomos .container__cards .card {
-    outline: 5px solid yellow;
     height: 120vh;
   }
 }
@@ -352,6 +353,7 @@ html {
   width: 100vw;
   height: 60vh;
   background-color: rgba(211, 210, 210, 0.678);
+  /* .........comienza media  */
 }
 
 .contacto h2 {
@@ -424,6 +426,17 @@ html {
 @media (max-width: 400px) {
   .contacto {
     margin-top: -5rem;
+  }
+}
+
+@media only screen and (max-width: 854px) and (orientation: landscape) {
+  .contacto {
+    outline: 5px solid red;
+    margin-top: 60rem;
+    height: 100vh;
+  }
+  .contacto .footer-info {
+    flex-direction: row;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

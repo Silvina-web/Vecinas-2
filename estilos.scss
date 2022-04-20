@@ -51,6 +51,14 @@ scroll-behavior: smooth;
        height: 5rem;
        box-shadow: none;
       }
+      @media only screen and(max-width:854px) and (orientation: landscape){
+          padding-top: 0.5rem;
+          img{
+              width: 2rem;
+              height: 2rem;
+          }
+      }
+
        }
 
 /* ----------SECCION2-----------SECCION 2----- */
@@ -141,7 +149,7 @@ scroll-behavior: smooth;
        @media (max-width:385px){
               .container__cards{
               .card{
-                    outline: 5px solid rgb(51, 30, 213);
+                    
                     height: 75vh;
                    }
                                }
@@ -151,9 +159,9 @@ scroll-behavior: smooth;
        @media (max-width:300px){
 
                                    .container__cards{
-                                          outline: 5px solid red;
+                                        
                                    .card{
-                                        outline: 5px solid blue;
+                                        
                                         height: 75vh;
            
 
@@ -170,10 +178,10 @@ scroll-behavior: smooth;
 
                                      @media only screen and(max-width:854px) and (orientation: landscape) {
                                          .container__cards{
-                                             outline: 2px solid green;
+                                        
 
                                              .card{
-                                                 outline: 5px solid yellow;
+                                                 
                                                  height: 120vh;
                                              }
                                          }
@@ -431,7 +439,6 @@ h1{
     height: 60vh;
     background-color: rgba(211, 210, 210, 0.678);   
 
-   
                h2{
                     padding-top: 1rem;
                     padding-bottom: 1rem;
@@ -460,12 +467,11 @@ h1{
                                     }
                               }
 
-                        .mail{
-                        
+                         .mail{
+                         
                             color: rgb(243, 243, 243);
                           
                              a{
-                                
                                 padding: 5px;
                                 text-decoration: none;
                                 color: rgba(214, 210, 210, 0.979); 
@@ -473,68 +479,56 @@ h1{
                                 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
                                 'Open Sans', 'Helvetica Neue', sans-serif;
 
-                                
-                                
-                            
-                            }
+                                       }
+                               }
 
-
-                        
-                         
-
-
-                        }
-
-
-                    
-
-
-
-
-
-
-
-                                             }
-
-                                             @media(max-width: 960px){
-                                    
+                                      }
+   /* .........comienza media  */
+                             @media(max-width: 960px){
                                                 margin-top: 26rem;
                                                 width: 100vw;
                                                 height: 70vh;
                                              .footer-info{
                                                  height: 60vh;
-                                                display:flex;
-                                                flex-direction: column;
-                                                justify-content: space-around;
-                                                gap: 2rem;
-                                                
-                                                padding: 2rem;
-                                             }
-                                                
-                                               
-                    
-                    
-                                                iframe{
+                                                 display:flex;
+                                                 flex-direction: column;
+                                                 justify-content: space-around;
+                                                 gap: 2rem;
+                                                 padding: 2rem;
+                                                            }
+                                             iframe{
                                                     width: 240px;
                                                     height: 150px;
-                                                }
+                                                    }
                                                 
                                                
-                                            }    
+                                                    }    
 
 
                                             @media(max-width: 550px){
-                                                
-                                                  margin-top: 7rem;
+                                                 margin-top: 7rem;
                                                   height: 100vh;
                                                 .footer-info{
                                                     height: 80vh;
                                                 }
                                                
-                                            }
+                                                                      }
 
-                                            @media(max-width: 400px)  {
+                                               @media(max-width: 400px)  {
                                                 margin-top: -5rem;
+                                                                         }
+
+
+                                            @media only screen and(max-width:854px) and (orientation: landscape){
+                                                outline: 5px solid red;
+                                                margin-top: 60rem;
+                                                height: 100vh;
+
+                                                .footer-info{
+                                                    
+                                                    flex-direction: row;
+                                                }
+
                                             }
 
                         }
