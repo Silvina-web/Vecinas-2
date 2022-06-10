@@ -135,9 +135,6 @@ html {
 }
 
 @media (max-width: 385px) {
-  #quienessomos .container__cards {
-    outline: 2px solid red;
-  }
   #quienessomos .container__cards .card {
     height: 75vh;
     margin: auto;
