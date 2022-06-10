@@ -140,9 +140,12 @@ scroll-behavior: smooth;
 
        @media (max-width:385px){
               .container__cards{
+                outline: 2px solid red;
+               
               .card{
-                    
+                
                     height: 75vh;
+                    margin: auto;
                    }
                                }
 
@@ -324,7 +327,7 @@ h1{
    .img-mockup{
      width: 19vw; 
      border-radius: 5px;
-     box-shadow: -30px 30px 20px rgba(0,0,0,0.3); 
+     box-shadow: -30px 30px 30px rgba(0,0,0,0.3); 
     
 }
 .img-mockup-fede{
