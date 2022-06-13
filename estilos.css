@@ -253,7 +253,7 @@ html {
 .trabajos {
   border-top: 1px solid black;
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   margin-top: 5rem;
   /* @media screen and (max-width:960px){
         outline: 5px solid pink;
@@ -345,6 +345,10 @@ html {
     width: 50vw;
     margin: 1rem;
   }
+  .trabajos .mockup .img-mockup-cuento {
+    width: 50vw;
+    margin: 1rem;
+  }
   .trabajos .mockup h3 {
     font-size: 2.5vw;
   }
@@ -403,7 +407,7 @@ html {
 
 @media (max-width: 960px) {
   .contacto {
-    margin-top: 26rem;
+    margin-top: 44rem;
     width: 100vw;
     height: 70vh;
   }
@@ -423,7 +427,7 @@ html {
 
 @media (max-width: 550px) {
   .contacto {
-    margin-top: 7rem;
+    margin-top: 20rem;
     height: 100vh;
   }
   .contacto .footer-info {
