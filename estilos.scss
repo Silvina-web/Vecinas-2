@@ -502,7 +502,13 @@ h1{
 
                                                                       }
 
-                          @media screen and (min-width:1500px) and (max-width:1700px){
+
+                          @media screen and (min-width:1600px) and (max-width:1700px){
+                                               outline: 5px solid rgb(224, 26, 95);
+                                             /*   margin-top: 7rem; */
+
+                                                    }
+                          @media screen and (min-width:1500px) and (max-width:1600px){
                                                outline: 5px solid rgb(194, 224, 26);
                                                margin-top: 7rem;
 
