@@ -407,7 +407,7 @@ html {
 
 @media (max-width: 960px) {
   .contacto {
-    margin-top: 44rem;
+    margin-top: 73rem;
     width: 100vw;
     height: 70vh;
   }
@@ -427,7 +427,7 @@ html {
 
 @media (max-width: 550px) {
   .contacto {
-    margin-top: 20rem;
+    margin-top: 34rem;
     height: 100vh;
   }
   .contacto .footer-info {
@@ -437,13 +437,14 @@ html {
 
 @media (max-width: 400px) {
   .contacto {
-    margin-top: -5rem;
+    margin-top: 24rem;
+    height: 100vh;
   }
 }
 
 @media only screen and (max-width: 854px) and (orientation: landscape) {
   .contacto {
-    margin-top: 60rem;
+    margin-top: 95rem;
     height: 100vh;
   }
   .contacto .footer-info {
