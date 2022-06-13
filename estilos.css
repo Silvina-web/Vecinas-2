@@ -124,6 +124,12 @@ html {
   padding: 1.3rem;
 }
 
+@media only screen and (max-width: 1600px) {
+  #quienessomos .card {
+    height: 60vh;
+  }
+}
+
 @media (max-width: 1024px) {
   #quienessomos .container__cards {
     flex-direction: column;
@@ -281,7 +287,7 @@ html {
 .trabajos .mockup .img-mockup {
   width: 19vw;
   border-radius: 5px;
-  box-shadow: -30px 30px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
 }
 
 .trabajos .mockup .img-mockup-fede {
@@ -342,10 +348,6 @@ html {
     margin: 1rem;
   }
   .trabajos .mockup .img-mockup-fede {
-    width: 50vw;
-    margin: 1rem;
-  }
-  .trabajos .mockup .img-mockup-cuento {
     width: 50vw;
     margin: 1rem;
   }
@@ -420,7 +422,7 @@ html {
 @media screen and (min-width: 1500px) and (max-width: 1700px) {
   .contacto {
     outline: 5px solid #c2e01a;
-    margin-top: 5rem;
+    margin-top: 7rem;
   }
 }
 
