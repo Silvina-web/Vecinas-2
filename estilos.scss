@@ -486,11 +486,16 @@ h1{
                                }
 
                                       }
-   /* .........comienza media  */
-                             @media screen and (min-width:1700px) and (max-width:1850px){
+   /* .........comienza media  Footer */
+
+                          @media screen and (min-width:1850px) and (max-width:1950px){
+                                               outline: 5px solid rgb(11, 229, 174);
+
+                                                        }
+                          @media screen and (min-width:1700px) and (max-width:1850px){
                                                   outline: 5px solid rgb(159, 12, 134);
 
-                }
+                                                                      }
 
                           @media screen and (min-width:1500px) and (max-width:1700px){
                                                outline: 5px solid rgb(194, 224, 26);
