@@ -487,11 +487,20 @@ h1{
 
                                       }
    /* .........comienza media  */
+                             @media screen and (min-width:1700px) and (max-width:1850px){
+                                                  outline: 5px solid rgb(159, 12, 134);
 
-    @media screen and (min-width:1100px) and (max-width:1500px){
-        outline: 5px solid red;
+                }
 
-    }
+                          @media screen and (min-width:1500px) and (max-width:1700px){
+                                               outline: 5px solid rgb(194, 224, 26);
+
+                                                    }
+                            @media screen and (min-width:1100px) and (max-width:1500px){
+                                outline: 5px solid red;
+
+                                            }
+
                              @media(max-width: 960px){
                                                 outline: 5px solid blue;
                                                 margin-top: 73rem;
@@ -510,11 +519,10 @@ h1{
                                                     height: 150px;
                                                     }
                                                 
-                                               
-                                                    }    
+                                            }    
 
 
-                                            @media(max-width: 550px){
+                              @media(max-width: 550px){
                                                 
                                                  margin-top: 34rem;
                                                   height: 100vh;
@@ -524,7 +532,7 @@ h1{
                                                
                                                                       }
 
-                                               @media(max-width: 400px)  {
+                               @media(max-width: 400px)  {
                                                 
                                                  margin-top: 24rem;
                                                   height: 100vh;
@@ -533,7 +541,7 @@ h1{
                                                                          }
 
 
-                                            @media only screen and(max-width:854px) and (orientation: landscape){
+                              @media only screen and(max-width:854px) and (orientation: landscape){
                                                 
                                                 margin-top: 95rem;
                                                 height: 100vh;
