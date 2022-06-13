@@ -127,9 +127,9 @@ scroll-behavior: smooth;
 
     
 }
-      @media only screen and(max-width:1600px) {
+      @media only screen and (max-width:1600px) {
         .card{
-            height: 60vh;
+            height: 80vh;
         }
 
       }
@@ -510,7 +510,7 @@ h1{
                                                     }
                           @media screen and (min-width:1500px) and (max-width:1600px){
                                                outline: 5px solid rgb(194, 224, 26);
-                                               margin-top: 7rem;
+                                               margin-top: 15rem;
 
                                                     }
                             @media screen and (min-width:1100px) and (max-width:1500px){

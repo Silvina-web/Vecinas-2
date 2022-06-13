@@ -126,7 +126,7 @@ html {
 
 @media only screen and (max-width: 1600px) {
   #quienessomos .card {
-    height: 60vh;
+    height: 80vh;
   }
 }
 
@@ -429,7 +429,7 @@ html {
 @media screen and (min-width: 1500px) and (max-width: 1600px) {
   .contacto {
     outline: 5px solid #c2e01a;
-    margin-top: 7rem;
+    margin-top: 15rem;
   }
 }
 
