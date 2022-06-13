@@ -487,8 +487,13 @@ h1{
 
                                       }
    /* .........comienza media  */
+
+    @media screen and (min-width:1100px) and (max-width:1500px){
+        outline: 5px solid red;
+
+    }
                              @media(max-width: 960px){
-                                
+                                                outline: 5px solid blue;
                                                 margin-top: 73rem;
                                                 width: 100vw;
                                                 height: 70vh;
