@@ -285,7 +285,7 @@ html {
 }
 
 .trabajos .mockup .img-mockup-fede {
-  width: 22vw;
+  width: 21.3vw;
   padding: 1rem;
   box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
   background-color: #080606;
@@ -420,6 +420,7 @@ html {
 @media screen and (min-width: 1500px) and (max-width: 1700px) {
   .contacto {
     outline: 5px solid #c2e01a;
+    margin-top: 5rem;
   }
 }
 
