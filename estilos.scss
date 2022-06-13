@@ -128,11 +128,14 @@ scroll-behavior: smooth;
     
 }
       @media only screen and (max-width:1600px) {
+        .container__cards{
+            
         .card{
-            height: 80vh;
+            height: 65vh;
         }
 
       }
+    }
          
 
          @media (max-width:1024px){
