@@ -346,14 +346,14 @@ h1{
 
    .img-mockup{
     
-     width: 19vw; 
+     width: 15vw; 
      border-radius: 5px;
      box-shadow: -30px 30px 20px rgba(0,0,0,0.3); 
     
 }
 
 .img-mockup-fede{
-    width: 21.3vw;
+    width: 16.8vw;
     padding: 1rem; 
     box-shadow: -30px 30px 20px rgba(0,0,0,0.3); 
     background-color: rgb(8, 6, 6);
@@ -520,7 +520,7 @@ h1{
 
                              @media(max-width: 960px){
                                         
-                                                margin-top: 73rem;
+                                                margin-top: 77rem;
                                                 width: 100vw;
                                                 height: 70vh;
                                              .footer-info{
@@ -541,7 +541,7 @@ h1{
 
                               @media(max-width: 550px){
                                                 
-                                                 margin-top: 34rem;
+                                                 margin-top: 40rem;
                                                   height: 100vh;
                                                 .footer-info{
                                                     height: 80vh;
@@ -551,11 +551,15 @@ h1{
 
                                @media(max-width: 400px)  {
                                                 
-                                                 margin-top: 24rem;
+                                                 margin-top: 45rem;
                                                   height: 100vh;
                     
                                                
                                                                          }
+
+                                 @media(max-width: 390px)  {
+                                    margin-top: 30rem;
+                                 }
 
 
                               @media only screen and(max-width:854px) and (orientation: landscape){

@@ -295,13 +295,13 @@ html {
 }
 
 .trabajos .mockup .img-mockup {
-  width: 19vw;
+  width: 15vw;
   border-radius: 5px;
   box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
 }
 
 .trabajos .mockup .img-mockup-fede {
-  width: 21.3vw;
+  width: 16.8vw;
   padding: 1rem;
   box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
   background-color: #080606;
@@ -425,7 +425,7 @@ html {
 
 @media (max-width: 960px) {
   .contacto {
-    margin-top: 73rem;
+    margin-top: 77rem;
     width: 100vw;
     height: 70vh;
   }
@@ -445,7 +445,7 @@ html {
 
 @media (max-width: 550px) {
   .contacto {
-    margin-top: 34rem;
+    margin-top: 40rem;
     height: 100vh;
   }
   .contacto .footer-info {
@@ -455,8 +455,14 @@ html {
 
 @media (max-width: 400px) {
   .contacto {
-    margin-top: 24rem;
+    margin-top: 45rem;
     height: 100vh;
+  }
+}
+
+@media (max-width: 390px) {
+  .contacto {
+    margin-top: 30rem;
   }
 }
 
