@@ -343,12 +343,6 @@ html {
   transform: translateX(-50%);
 }
 
-@media screen and (max-width: 1600px) and (min-width: 1500px) {
-  .trabajos .img-mockup {
-    outline: 5px solid red;
-  }
-}
-
 @media screen and (max-width: 960px) {
   .trabajos {
     height: 100vh;
