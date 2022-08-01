@@ -346,14 +346,14 @@ h1{
 
    .img-mockup{
     
-     width: 15vw; 
+     width: 13vw; 
      border-radius: 5px;
      box-shadow: -30px 30px 20px rgba(0,0,0,0.3); 
     
 }
 
 .img-mockup-fede{
-    width: 16.8vw;
+    width: 14.5vw;
     padding: 1rem; 
     box-shadow: -30px 30px 20px rgba(0,0,0,0.3); 
     background-color: rgb(8, 6, 6);
@@ -403,6 +403,12 @@ h1{
     transform: translateX(-50%); 
   
   
+}
+@media screen and (max-width:1600px ) and ( min-width:1500px){
+    .img-mockup{
+        outline: 5px solid red;
+        
+    }
 }
 
         @media screen and (max-width:960px) {
