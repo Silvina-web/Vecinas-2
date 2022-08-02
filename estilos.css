@@ -295,13 +295,13 @@ html {
 }
 
 .trabajos .mockup .img-mockup {
-  width: 13vw;
+  width: 15vw;
   border-radius: 5px;
   box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
 }
 
 .trabajos .mockup .img-mockup-fede {
-  width: 14.5vw;
+  width: 16.6vw;
   padding: 1rem;
   box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
   background-color: #080606;
